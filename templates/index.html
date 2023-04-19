@@ -68,7 +68,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 
 <div class="rightcolumn"></div>
     <span class="profiletitle">Profile</span>
-    <img class="profilecircle" src="{{ user.profile.image.url }}">
+    <a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
     <span class="profilename">{{ user.first_name }}</span>
     <span class="profileusername">@{{user}}</span>
     <div class="profilegratitude"></div>
