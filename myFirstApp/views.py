@@ -70,6 +70,16 @@ def taskdetail(request, pk):
     return render(request, 'task_detail.html', context)
 
 @login_required
+def taskcreate(request):
+    if request.method == 'POST':
+        title = request.POST['title']
+        description = request.POST['description']
+        task = Task.objects.create(user=request.user, title=title, description=description)
+        return redirect('tasks')
+    return render(request, 'task_create.html')
+
+
+@login_required
 def settings(request):
     if request.method == 'POST':
         user = request.user
