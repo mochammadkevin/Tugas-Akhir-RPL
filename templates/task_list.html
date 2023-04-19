@@ -3,13 +3,22 @@
 <table>
     <tr>
         <th>Item</th>
-        <a href="{% url 'task_create' %}">Add new item</a>
+        <th>Action</th>
+        <th><a href="{% url 'task_create' %}">Add new item</a></th>
     </tr>
     {% for task in tasks %}
     <tr>
-        <td> <a href="{% url 'task' task.id %}">{{ task.title }}</a></td>
+        <td>{{ task.title }}</td>
+        <td>
+            <form action="{% url 'task_delete' task.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
+        </td>
     </tr>
     {% empty %}
-        <h3>No items in list</h3>
+        <tr>
+            <td colspan="2"><h3>No items in list</h3></td>
+        </tr>
     {% endfor %}
 </table>
