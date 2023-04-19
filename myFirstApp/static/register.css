@@ -1,0 +1,347 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.studapplogo {
+    position: absolute;
+    width: 30.9px;
+    height: 30.9px;
+    left: 34px;
+    top: 44px;
+}
+
+.toptitle {
+    position: absolute;
+    width: 136px;
+    height: 37.65px;
+    left: 74px;
+    top: 42px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.3518px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.leftcolumn {
+    position: absolute;
+    width: 660px;
+    height: 620px;
+    left: 52.8px;
+    top: 106px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4.2482px 63.7229px rgba(0, 0, 0, 0.15);
+    border-radius: 21.241px;
+}
+
+.logintitle {
+    position: absolute;
+    width: 238.06px;
+    height: 59.33px;
+    left: 138.4px;
+    top: 134.8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46.3086px;
+    line-height: 56px;
+
+    color: #000000;
+}
+
+.logintitledesc {
+    position: absolute;
+    width: 238.41px;
+    height: 15.55px;
+    left: 140.8px;
+    top: 202px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.1062px;
+    line-height: 13px;
+
+    color: #575757;
+}
+
+.nameform {
+    position: absolute;
+    width: 50.4px;
+    height: 15.2px;
+    left: 138.4px;
+    top: 235.6px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #575757;
+}
+
+.name {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 333.48px;
+    height: 33.99px;
+    left: 138.39px;
+    top: 260.4px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.8px solid #E7E7E7;
+    border-radius: 5.31025px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.0106px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.usernameform {
+    position: absolute;
+    width: 80.8px;
+    height: 15.2px;
+    left: 138.4px;
+    top: 313.2px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #575757;
+
+}
+
+.username {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 333.48px;
+    height: 33.99px;
+    left: 138.39px;
+    top: 338px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.8px solid #E7E7E7;
+    border-radius: 5.31025px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.0106px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.emailform {
+    position: absolute;
+    width: 50.4px;
+    height: 15.2px;
+    left: 138.4px;
+    top: 390.8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #575757;
+}
+
+.email {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 333.48px;
+    height: 33.99px;
+    left: 138.39px;
+    top: 415.6px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.8px solid #E7E7E7;
+    border-radius: 5.31025px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.0106px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.passform {
+    position: absolute;
+    width: 78.4px;
+    height: 15.2px;
+    left: 138.4px;
+    top: 468.4px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #575757;
+
+}
+
+.password1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 333.48px;
+    height: 33.99px;
+    left: 138.39px;
+    top: 493.2px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.8px solid #E7E7E7;
+    border-radius: 5.31025px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.0106px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.confirmform {
+    position: absolute;
+    width: 141.6px;
+    height: 15.2px;
+    left: 138.4px;
+    top: 543.6px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #575757;
+}
+
+.password2 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 333.48px;
+    height: 33.99px;
+    left: 138.39px;
+    top: 568.4px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.8px solid #E7E7E7;
+    border-radius: 5.31025px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.0106px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.registerbutton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 333.48px;
+    height: 33.99px;
+    left: 138.39px;
+    top: 630.8px;
+
+    background: rgba(0, 148, 255, 0.13);
+    border: 0.8px solid #9AD0E8;
+    border-radius: 5.31025px;
+
+    color: #0079BD;
+}
+
+.redirectone {
+    position: absolute;
+    width: 118.4px;
+    height: 15.2px;
+    left: 229.6px;
+    top: 685.2px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.6px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #A7A7A7;
+}
+
+.redirecttwo {
+    position: absolute;
+    width: 30.4px;
+    height: 15.2px;
+    left: 348px;
+    top: 685.2px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.6px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #00BD62;
+    text-decoration: none;
+}
+
+.slogan {
+
+    position: fixed;
+    width: 682.35px;
+    height: 155.31px;
+    left: 815px;
+    top: 107.34px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62.1153px;
+    line-height: 75px;
+    text-align: right;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 3.25266px 22.7686px rgba(0, 0, 0, 0.05);
+}
+
+.registerimg {
+    position: fixed;
+    width: 677.51px;
+    height: 441.11px;
+    left: 858.49px;
+    top: 326.89px;
+}
+
+.rightcolumn {
+    position: fixed;
+    width: 768px;
+    height: 864px;
+    left: 768px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #A6DDE9 0%, #FFECD7 100%);
+}
+
+.handlogo {
+    position: absolute;
+    width: 39.24px;
+    height: 39.24px;
+    left: 384.76px;
+    top: 143.95px;
+}

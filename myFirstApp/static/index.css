@@ -1,0 +1,764 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #575757;
+    font-weight: 700;
+}
+
+.studapplogo {
+    position: absolute;
+    width: 27.02px;
+    height: 27.02px;
+    left: 45.5px;
+    top: 54.03px;
+}
+
+.logotitle {
+    position: absolute;
+    width: 96.69px;
+    height: 26.77px;
+    left: 76.07px;
+    top: 55.45px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.1564px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.dashboardnav {
+    position: absolute;
+    width: 92.42px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 142.9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #0079BD;
+
+}
+
+.todonav {
+    position: absolute;
+    width: 111.62px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 226.08px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.habitnav {
+    position: absolute;
+    width: 111.62px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 309.26px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.financenav {
+    position: absolute;
+    width: 131.52px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 392.44px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+}
+
+.gratitudenav {
+    position: absolute;
+    width: 143.61px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 475.62px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.settingsnav {
+    position: absolute;
+    width: 154.98px;
+    height: 22.75px;
+    left: 84.59px;
+    top: 559px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.usergreet {
+    position: absolute;
+    width: 686px;
+    height: 38px;
+    left: 377px;
+    top: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.52px;
+    line-height: 35px;
+
+    color: #000000;
+
+}
+
+.usertime {
+    position: absolute;
+    width: 389px;
+    height: 22.08px;
+    left: 376.8px;
+    top: 94.21px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.4764px;
+    line-height: 20px;
+
+    color: #575757;
+
+}
+
+.leftcolumn {
+    position: absolute;
+    width: 334.85px;
+    height: 767.81px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 21.3281px rgba(0, 0, 0, 0.05);
+}
+
+.logout {
+    position: absolute;
+    width: 154.98px;
+    height: 22.75px;
+    left: 85.46px;
+    top: 642px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.dashboardbold {
+    position: absolute;
+    left: 61.14px;
+    right: 260.91;
+    top: 144.03px;
+    bottom: 609.98px;
+}
+
+.todolist {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 29.51%;
+    bottom: 68.62%;
+}
+
+.habit {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 40.35%;
+    bottom: 57.79%;
+}
+
+.finance {
+    position: absolute;
+    width: 13.51px;
+    height: 12.8px;
+    left: 60.79px;
+    top: 394.57px;
+}
+
+.gratitude {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 62.11%;
+    bottom: 36.13%;
+
+}
+
+.settings {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 72.96%;
+    bottom: 25.27%;
+}
+
+.logouticon {
+    position: absolute;
+    left: 61.14px;
+    right: 95.13%;
+    top: 83.69%;
+    bottom: 14.36%;
+}
+
+.middlecolumncontent1 {
+    position: absolute;
+    width: 631.32px;
+    height: 196.23px;
+    left: 432px;
+    top: 143px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.21693px 16.0847px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+}
+
+.financetitle {
+    position: absolute;
+    width: 156.02px;
+    height: 25.74px;
+    left: 462.56px;
+    top: 161.5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.49px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.financesquare1 {
+    position: absolute;
+    width: 260.57px;
+    height: 110.98px;
+    left: 464.97px;
+    top: 196.88px;
+
+    background: linear-gradient(99.87deg, #00BD62 2.23%, #3EBEF5 96.86%);
+    box-shadow: 0px 0px 20.9101px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+
+}
+
+.financesquare2 {
+    position: absolute;
+    width: 260.57px;
+    height: 110.98px;
+    left: 774.6px;
+    top: 196.88px;
+
+    background: linear-gradient(99.38deg, #F44D50 1.08%, #FF9C41 109.87%);
+    box-shadow: 0px 0px 20.9101px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+}
+
+.financebalance {
+    position: absolute;
+    width: 123.05px;
+    height: 19.4px;
+    left: 478.65px;
+    top: 210.56px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.4756px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.financebalancecash {
+    position: absolute;
+    width: 181.76px;
+    height: 41.82px;
+    left: 478.65px;
+    top: 241.12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1693px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+
+}
+
+.financeexpense {
+    position: absolute;
+    width: 123.05px;
+    height: 19.4px;
+    left: 790.69px;
+    top: 210.56px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.4756px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.financeexpensecash {
+    position: absolute;
+    width: 200.25px;
+    height: 41.82px;
+    left: 790.69px;
+    top: 241.12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32.1693px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+
+.financesquare3 {
+    position: absolute;
+    width: 41.82px;
+    height: 13.67px;
+    left: 900.06px;
+    top: 213.77px;
+
+    background: #C65858;
+    border-radius: 4.8254px;
+}
+
+.financesquare3text {
+    position: absolute;
+    width: 25.09px;
+    height: 9.65px;
+    left: 908.11px;
+    top: 215.38px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8.34476px;
+    line-height: 10px;
+
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.redirect1 {
+    position: absolute;
+    width: 16.89px;
+    height: 16.89px;
+    left: 628.23px;
+    top: 165.51px;
+}
+
+.middlecolumncontent2 {
+    position: absolute;
+    width: 271.03px;
+    height: 258.16px;
+    left: 432px;
+    top: 366px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.21693px 16.0847px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+}
+
+.habittitle {
+    position: absolute;
+    width: 132.7px;
+    height: 25.74px;
+    left: 456.13px;
+    top: 390.13px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.49px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.habittext {
+    position: absolute;
+    width: 109.2px;
+    height: 38.64px;
+    left: 513.23px;
+    top: 533.28px;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28.8693px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.habittext2 {
+    position: absolute;
+    width: 100.18px;
+    height: 15.24px;
+    left: 517.52px;
+    top: 571.92px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.3896px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #A7A7A7;
+}
+
+.bicyclelogo {
+    position: absolute;
+    width: 81.23px;
+    height: 81.23px;
+    left: 526.9px;
+    top: 444.01px;
+
+    filter: drop-shadow(0px 2.80095px 8.40285px rgba(0, 0, 0, 0.15));
+}
+
+.redirect2 {
+    position: absolute;
+    width: 16.89px;
+    height: 16.89px;
+    left: 600.08px;
+    top: 393.54px;
+}
+
+.middlecolumncontent3 {
+    position: absolute;
+    width: 317px;
+    height: 355px;
+    left: 746px;
+    top: 366px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.21693px 16.0847px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+}
+
+.todotitle {
+    position: absolute;
+    width: 106px;
+    height: 26px;
+    left: 779px;
+    top: 391px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.49px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.redirect3 {
+    position: absolute;
+    width: 16.89px;
+    height: 17.18px;
+    left: 895.24px;
+    top: 393.54px;
+}
+
+.middlecolumncontent31 {
+    position: absolute;
+    width: 252px;
+    height: 267.52px;
+    left: 779px;
+    top: 433.13px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20.9101px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+}
+
+.todotitle2 {
+    position: absolute;
+    width: 116.11px;
+    height: 22.91px;
+    left: 809.99px;
+    top: 457.26px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.0538px;
+    line-height: 21px;
+
+    color: #000000;
+
+}
+
+.middlecolumncontent4 {
+    position: absolute;
+    width: 271.03px;
+    height: 86.05px;
+    left: 432px;
+    top: 635px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.21693px 16.0847px rgba(0, 0, 0, 0.1);
+    border-radius: 12.0635px;
+
+}
+
+.middlecolumncontent41 {
+
+    position: absolute;
+    width: 250.12px;
+    height: 67.56px;
+    left: 443.26px;
+    top: 644.65px;
+
+    background: linear-gradient(266.36deg, #43A2F9 2.69%, #FF88EC 97.61%);
+    box-shadow: 0px 3.21693px 16.0847px rgba(0, 0, 0, 0.3);
+    border-radius: 12.0635px;
+}
+
+.quotestext {
+    position: absolute;
+    width: 219.56px;
+    height: 39.92px;
+    left: 457.74px;
+    top: 660.74px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15.3884px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1.05051px 9.45455px rgba(0, 0, 0, 0.25);
+}
+
+.rightcolumn {
+    position: absolute;
+    width: 373.3px;
+    height: 767.81px;
+    left: 1146px;
+    top: 0px;
+
+    background: #F5F5F5;
+}
+
+.profiletitle {
+    position: absolute;
+    width: 130.95px;
+    height: 36.26px;
+    left: 1276.1px;
+    top: 55.45px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.3px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.profilecircle {
+    position: absolute;
+    width: 100.24px;
+    height: 100.24px;
+    left: 1291.03px;
+    top: 106.64px;
+    border-radius: 50%;
+}
+
+.profilename {
+    position: absolute;
+    width: 324px;
+    height: 28px;
+    left: 1179px;
+    top: 231px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.0916px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.profileusername {
+    position: absolute;
+    width: 324px;
+    height: 17px;
+    left: 1179px;
+    top: 265px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.7096px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #575757;
+}
+
+.profilegratitude {
+    position: absolute;
+    width: 323.48px;
+    height: 186.98px;
+    left: 1179.41px;
+    top: 311.39px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 14.2188px rgba(0, 0, 0, 0.1);
+    border-radius: 10.6641px;
+}
+
+.profilegratitudetext1 {
+
+    position: absolute;
+    width: 224.66px;
+    height: 18.48px;
+    left: 1266.15px;
+    top: 339.12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.2233px;
+    line-height: 17px;
+
+    color: #000000;
+
+}
+
+.profilegratitudetext2 {
+    position: absolute;
+    width: 122.28px;
+    height: 12.29px;
+    left: 1267.57px;
+    top: 359.73px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.06173px;
+    line-height: 11px;
+
+    color: #A7A7A7;
+
+}
+
+.gratprofile {
+    position: absolute;
+    width: 54.03px;
+    height: 54.03px;
+    left: 1201.45px;
+    top: 320.63px;
+}
+
+.gratitudetext {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 286.51px;
+    height: 101.66px;
+    left: 1201.45px;
+    top: 383.91px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #E7E7E7;
+    border-radius: 6.63781px;
+    padding: 10px;
+    padding-bottom: 70px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 11px;
+
+}
+
+.gratsubmit {
+    position: absolute;
+    width: 19.2px;
+    height: 19.2px;
+    left: 1454.55px;
+    top: 455.71px;
+    text-decoration: none;
+    border: 0;
+}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Habit Tracker{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static '/habit.css' %}">
+
+
+<div class="leftcolumn">
+    <img src="{% static '/logo/studapplogo.svg' %}" alt="logo" class="studapplogo">
+    <img src="{% static '/logo/dashboard.svg' %}" alt="logo" class="dashboard">
+    <img src="{% static '/logo/todolist.svg' %}" alt="logo" class="todolist">
+    <img src="{% static '/logo/habitbold.svg' %}" alt="logo" class="habit">
+    <img src="{% static '/logo/finance.png' %}" alt="logo" class="finance">
+    <img src="{% static '/logo/gratitude.svg' %}" alt="logo" class="gratitude">
+    <img src="{% static '/logo/settings.svg' %}" alt="logo" class="settings">
+    <img src="{% static '/logo/logout.svg' %}" alt="logo" class="logouticon">
+
+    <span class="logotitle">StudApp</span>
+
+      <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
+      <a href="" class="todonav">To-Do List</a>
+      <a href="" class="habitnav">Habit Tracker</a>
+      <a href="" class="financenav">Finance Tracker</a>
+      <a href="" class="gratitudenav">Gratitude Tracker</a>
+      <a href="" class="settingsnav">Settings</a>
+      <a href="{% url 'logout' %}" class="logout">Log out</a>
+</div>
+
+<div class="middlecolumn">
+    <h1 class="usergreet">Your weekly habit tracker!</h1>
+    <h2 class="usertime">Apr 3 - Apr 9</h2>
+    <button href="" class="newtaskbutton">Add new habit</button>
+</div>
+
+
+<div class="rightcolumn"></div>
+    <img class="profilecircle" src="{{ user.profile.image.url }}">
+    <span class="profilename">{{ user.first_name }}</span>
+    <span class="profileusername">@{{user}}</span>
+    <h2 class="completedtask">This week progress</h2>
+
+{% endblock content %}
