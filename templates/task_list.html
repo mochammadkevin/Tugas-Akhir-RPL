@@ -3,6 +3,7 @@
 <table>
     <tr>
         <th>Item</th>
+        <a href="{% url 'task_create' %}">Add new item</a>
     </tr>
     {% for task in tasks %}
     <tr>
