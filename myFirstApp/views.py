@@ -78,6 +78,12 @@ def taskcreate(request):
         return redirect('tasks')
     return render(request, 'task_create.html')
 
+@login_required
+def taskdelete(request, pk):
+    task = Task.objects.get(pk=pk, user=request.user)
+    task.delete()
+    return redirect('tasks')
+
 
 @login_required
 def settings(request):
