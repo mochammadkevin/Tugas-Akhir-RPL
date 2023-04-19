@@ -12,6 +12,8 @@ urlpatterns = [
     path('habit/', views.habit, name='habit'),
     path('task_list/', views.tasklist, name='tasks'),
     path('task/<int:pk>/', views.taskdetail, name='task'),
+    path('task_create/', views.taskcreate, name='task_create'),
     path('settings/', views.settings, name='settings'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
