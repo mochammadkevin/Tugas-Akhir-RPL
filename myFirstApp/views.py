@@ -74,7 +74,8 @@ def taskcreate(request):
     if request.method == 'POST':
         title = request.POST['title']
         description = request.POST['description']
-        task = Task.objects.create(user=request.user, title=title, description=description)
+        deadline = request.POST['deadline']
+        task = Task.objects.create(user=request.user, title=title, description=description, deadline=deadline)
         return redirect('tasks')
     return render(request, 'task_create.html')
 
