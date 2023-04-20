@@ -84,6 +84,28 @@ def taskdelete(request, pk):
     task.delete()
     return redirect('tasks')
 
+@login_required
+def taskcomplete(request, pk):
+    task = Task.objects.get(pk=pk, user=request.user)
+    if task.complete:
+        task.complete = False
+    else:
+        task.complete = True
+    task.save()
+    return redirect('tasks')
+
+@login_required
+def taskupdate(request, pk):
+    task = Task.objects.get(pk=pk, user=request.user)
+    if request.method == 'POST':
+        task.title = request.POST['title']
+        task.description = request.POST['description']
+        task.save()
+        return redirect('tasks')
+    context = {
+        'task': task
+    }
+    return render(request, 'task_update.html', context)
 
 @login_required
 def settings(request):
