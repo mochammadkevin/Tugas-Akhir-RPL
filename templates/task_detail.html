@@ -3,7 +3,16 @@
 {% block content %}
 {% load static %}
 
-<h1> {{task.title}} </h1>
-<h2> {{task.description}}</h2>
+<h1>{{ task.title }}</h1>
+<h2>{{ task.description }}</h2>
+<h3>{{ task.created|date:"M d" }} </h3>
+
+{% if task.complete %}
+  <h3>The task is complete</h3>
+{% else %}
+  <h3>The task has not yet been done</h3>
+{% endif %}
+
+<a href="{% url 'task_update' task.id %}">Update Task</a>
 
 {% endblock content %}
