@@ -17,19 +17,60 @@
 
     <span class="logotitle">StudApp</span>
 
-      <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
-      <a href="" class="todonav">To-Do List</a>
-      <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
-      <a href="" class="financenav">Finance Tracker</a>
-      <a href="" class="gratitudenav">Gratitude Tracker</a>
-      <a href="" class="settingsnav">Settings</a>
-      <a href="{% url 'logout' %}" class="logout">Log out</a>
+    <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
+    <a href="" class="todonav">To-Do List</a>
+    <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
+    <a href="" class="financenav">Finance Tracker</a>
+    <a href="" class="gratitudenav">Gratitude Tracker</a>
+    <a href="" class="settingsnav">Settings</a>
+    <a href="{% url 'logout' %}" class="logout">Log out</a>
 </div>
 
 <div class="middlecolumn">
     <h1 class="usergreet">{{ user.first_name }}'s To-Do List</h1>
     <h2 class="usertime">April 2023</h2>
     <button href="" class="newtaskbutton">Create new task</button>
+    <h1>My To Do List</h1>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Action</th>
+            <th><a href="{% url 'task_create' %}">Add new item</a></th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td> <a href="{% url 'task' task.id %}">{{ task.title }}</a></td>
+            <td>
+                <form action="{% url 'task_delete' task.id %}" method="POST" id="delete-form">
+                    {% csrf_token %}
+                    <button type="submit"
+                        onclick="return confirm('Are you sure you want to delete this task?')">Delete</button>
+                </form>
+            </td>
+            <td>
+                {% if not task.complete %}
+                <form action="{% url 'task_complete' task.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit">Complete</button>
+                </form>
+                {% else %}
+                <form action="{% url 'task_complete' task.id %}?uncomplete=true" method="POST">
+                    {% csrf_token %}
+                    <button type="submit">Incomplete</button>
+                </form>
+                {% endif %}
+
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="3">
+                <h3>No items in list</h3>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 
 <div class="rightcolumn"></div>
