@@ -332,7 +332,7 @@ a:hover {
 }
 
 .completedtask {
-    position: absolute;
+position: absolute;
 left: 77.76%;
 right: 2.15%;
 top: 57.16%;
@@ -346,3 +346,35 @@ line-height: 25px;
 
 color: #000000;
 }
+
+.middlecolumn {
+    position: absolute;
+width: 717px;
+height: 502px;
+left: 381px;
+top: 220px;
+
+    background: #FFFFFF;
+}
+
+.tasktitle{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18.0249px;
+line-height: 22px;
+
+color: #000000;
+}
+
+.taskdesc{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13.1503px;
+line-height: 16px;
+color: #7C7C7C;
+padding-bottom: 25px;
+}
+
+
