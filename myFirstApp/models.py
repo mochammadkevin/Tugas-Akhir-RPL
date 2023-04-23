@@ -22,3 +22,9 @@ class Task(models.Model):
 
     class Meta:
         ordering = ['complete']
+
+class Quote(models.Model):
+    desc = models.TextField()
+
+    def __str__(self):
+        return self.desc
