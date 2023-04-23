@@ -18,5 +18,4 @@ urlpatterns = [
     path('task_update/<int:pk>/', views.taskupdate, name='task_update'),
     path('settings/', views.settings, name='settings'),
 
-
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
