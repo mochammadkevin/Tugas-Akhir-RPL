@@ -4,11 +4,18 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.utils.timezone import now
 from .models import Task
+from .models import Quote
+import random
 
 
 @login_required
 def index(request):
-    return render(request, 'index.html')
+    quotes = Quote.objects.all()
+    quote = random.choice(quotes)
+    context = {
+        'quote': quote
+    }
+    return render(request, 'index.html', context)
 
 @login_required
 def habit(request):
@@ -101,6 +108,7 @@ def taskupdate(request, pk):
     if request.method == 'POST':
         task.title = request.POST['title']
         task.description = request.POST['description']
+        task.deadline = request.POST['deadline']
         task.save()
         return redirect('tasks')
     context = {
@@ -116,5 +124,4 @@ def settings(request):
         user.profile.save()
         return redirect('settings')
     return render(request, 'settings.html')
-
 
