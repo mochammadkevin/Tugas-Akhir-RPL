@@ -280,7 +280,7 @@ a:hover {
 
 .rightcolumn {
     position: absolute;
-    width: 370.3px;
+    width: 373.3px;
     height: 767.81px;
     left: 1146px;
     top: 0px;
@@ -377,43 +377,62 @@ a:hover {
 
 .taskdesc {
     position: absolute;
-    width: 337px;
-    height: 28px;
-    left: 417px;
-    top: 275px;
+width: 70.71px;
+height: 13.71px;
+left: 418.01px;
+top: 271px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20.4718px;
-    line-height: 25px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14.4296px;
+line-height: 17px;
 
-    color: #000000;
+color: #575757;
 }
 
-.taskcreated {
-    position: absolute;
-    width: 337px;
-    height: 28px;
-    left: 417px;
-    top: 321px;
+.taskdescbox{
+    box-sizing: border-box;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20.4718px;
-    line-height: 25px;
+position: absolute;
+width: 226px;
+height: 31px;
+left: 418px;
+top: 293.02px;
 
-    color: #000000;
+background: rgba(0, 0, 0, 0.05);
+border: 0.721482px solid #E7E7E7;
+border-radius: 4.78906px;
+font-family: 'Inter';
+font-style: normal;
+font-size: 13px;
+padding: 10px;
+}
 
+.taskcreated{
+    box-sizing: border-box;
+
+position: absolute;
+width: 226px;
+height: 31px;
+left: 418px;
+top: 363.02px;
+
+background: rgba(0, 0, 0, 0.05);
+border: 0.721482px solid #E7E7E7;
+border-radius: 4.78906px;
+font-size: 13px;
+padding: 10px;
+font-family: 'Inter';
+font-style: normal;
 }
 
 .taskstatus {
     position: absolute;
-    width: 99px;
-    height: 27px;
-    left: 418px;
-    top: 471px;
+width: 108.88px;
+height: 27px;
+left: 418px;
+top: 527px;
 
     background: linear-gradient(99.87deg, #00BD62 2.23%, #3EBEF5 96.86%);
     box-shadow: 0px 0px 17.1082px rgba(0, 0, 0, 0.1);
@@ -422,10 +441,10 @@ a:hover {
 
 .taskstatusdesc {
     position: absolute;
-width: 72.82px;
-height: 17.18px;
-left: 431.09px;
-top: 476.73px;
+    width: 80.09px;
+    height: 17.18px;
+    left: 432.4px;
+    top: 532.73px;
 }
 
 .taskstatusdesc h3 {
@@ -443,10 +462,10 @@ color: #FFFFFF;
     box-sizing: border-box;
 
 position: absolute;
-width: 205.48px;
-height: 33.55px;
+width: 226px;
+height: 34px;
 left: 418px;
-top: 373px;
+top: 417px;
 
 background: rgba(0, 148, 255, 0.13);
 border: 0.83871px solid #9AD0E8;
@@ -466,10 +485,10 @@ color: #0079BD;
     box-sizing: border-box;
 
 position: absolute;
-width: 205.48px;
-height: 33.55px;
+width: 226px;
+height: 34px;
 left: 418px;
-top: 417.45px;
+top: 468px;
 
 background: rgba(255, 0, 0, 0.22);
 border: 0.83871px solid #E89A9A;
@@ -493,3 +512,59 @@ left: 770px;
 top: 323px;
 
 }
+
+.rightcolumn2{
+    position: absolute;
+width: 324px;
+height: 275px;
+left: 1179px;
+top: 441px;
+
+background: #FFFFFF;
+box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+border-radius: 19px;
+}
+
+.rightcolumnsquaretext{
+    position: absolute;
+left: 76.76%;
+right: 0.15%;
+top: 64.32%;
+bottom: 30.73%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30.4px;
+line-height: 37px;
+text-align: center;
+
+color: #000000;
+}
+
+.detailbackground{
+    position: absolute;
+    height: 159px;
+    width: 243px;
+    left: 1190px;
+    top: 557px;
+    border-radius: 0px;
+    
+}
+
+.taskcreatetitle{
+    position: absolute;
+width: 70.71px;
+height: 13.71px;
+left: 418.01px;
+top: 341.02px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14.4296px;
+line-height: 17px;
+
+color: #575757;
+}
+
