@@ -2,19 +2,80 @@
 {% block title %}Dashboard{% endblock title %}
 {% block content %}
 {% load static %}
+<link rel="stylesheet" href="{% static '/todocreate.css' %}">
+<link
+rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link rel="stylesheet" href="{% static '/calendartodo.css' %}">
+<script src="{% static '/scriptcalendar.js' %}" defer></script>
 
+<div class="leftcolumn">
+  <img src="{% static '/logo/studapplogo.svg' %}" alt="logo" class="studapplogo">
+  <img src="{% static '/logo/dashboard.svg' %}" alt="logo" class="dashboard">
+  <img src="{% static '/logo/todolistbold.svg' %}" alt="logo" class="todolist">
+  <img src="{% static '/logo/habit.svg' %}" alt="logo" class="habit">
+  <img src="{% static '/logo/finance.png' %}" alt="logo" class="finance">
+  <img src="{% static '/logo/gratitude.svg' %}" alt="logo" class="gratitude">
+  <img src="{% static '/logo/settings.svg' %}" alt="logo" class="settings">
+  <img src="{% static '/logo/logout.svg' %}" alt="logo" class="logouticon">
+
+  <span class="logotitle">StudApp</span>
+
+  <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
+  <a href="" class="todonav">To-Do List</a>
+  <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
+  <a href="" class="financenav">Finance Tracker</a>
+  <a href="" class="gratitudenav">Gratitude Tracker</a>
+  <a href="" class="settingsnav">Settings</a>
+  <a href="{% url 'logout' %}" class="logout">Log out</a>
+</div>
+
+<div class="middlecolumn"></div>
+<h1 class="createtasktitle">Create a new task</h1>
 <form method="post">
   {% csrf_token %}
-  <label for="title">Title:</label><br>
-  <input type="text" id="title" name="title"><br>
-  <label for="description">Category:</label><br>
-  <textarea id="description" name="description"></textarea><br>
-  <label for="deadline">Deadline:</label><br>
-  <input type="date" id="deadline" name="deadline"><br>
-  <input type="submit" value="Submit">
+  <label class="titlecreate" for="title">Title:</label><br>
+  <input class="titletext" type="text" id="title" name="title"><br>
+  <label class="descriptioncreate" for="description">Category:</label><br>
+  <input class="descriptiontext" type="text" id="description" name="description"><br>
+  <label class="deadlinecreate" for="deadline">Deadline:</label><br>
+  <input class="deadlinetext" type="date" id="deadline" name="deadline"><br>
+  <button type="submit" class="addtaskbutton" value="Submit">Add task</button>
 </form>
+  <img src="{% static '/img/todocreate.png' %}" alt="logo" class="todobackground">
 
+<div class="rightcolumn"></div>
+    <a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
+    <span class="profilename">{{ user.first_name }}</span>
+    <span class="profileusername">@{{user}}</span>
 
-  
+<div class="rightcolumn2"></div>
+  <h1 class="rightcolumnsquaretext">Adding task</h1>
+  <img src="{% static '/img/detailbackground.png' %}" alt="logo" class="detailbackground">
+
+    <div class="calendarwrapper">
+      <div class="wrapper">
+          <header>
+            <p class="current-date"></p>
+            <div class="icons">
+              <span id="prev" class="material-symbols-rounded">chevron_left</span>
+              <span id="next" class="material-symbols-rounded">chevron_right</span>
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="days"></ul>
+          </div>
+        </div>
+  </div>
 
 {% endblock content %}
