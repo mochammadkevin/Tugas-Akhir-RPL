@@ -23,12 +23,12 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 
     <span class="logotitle">StudApp</span>
 
-      <a href="" class="dashboardnav">Dashboard</a>
+      <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
       <div class="todotest"></div>
       <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
       <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
       <a href="" class="financenav">Finance Tracker</a>
-      <a href="" class="gratitudenav">Gratitude Tracker</a>
+      <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
       <a href="{% url 'settings' %}" class="settingsnav">Settings</a>
       <a href="{% url 'logout' %}" class="logout">Log out</a>
 </div>
@@ -77,7 +77,8 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
     <span class="profilegratitudetext2">Let me know your thoughts!</span>
     <form action="" method="post">
         {% csrf_token %}
-        <input type="text" name="gratitudetext" placeholder="Write something here..." class="gratitudetext">
+        <input type="hidden" name="from_index" value="true">
+        <input type="text" name="desc" id="desc" placeholder="Write something here..." class="gratitudetext">
         <button type = "submit" class="gratsubmit">
             <img src="{% static '/logo/gratsubmit.svg' %}" />
          </button>

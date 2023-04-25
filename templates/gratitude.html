@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
-
-{% block title %}Update Task{% endblock title %}
-
+{% block title %}Dashboard{% endblock title %}
 {% block content %}
 {% load static %}
-<link rel="stylesheet" href="{% static '/todoupdate.css' %}">
+<link rel="stylesheet" href="{% static '/gratitude.css' %}">
 <link
 rel="stylesheet"
 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -15,17 +13,17 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 <div class="leftcolumn">
   <img src="{% static '/logo/studapplogo.svg' %}" alt="logo" class="studapplogo">
   <img src="{% static '/logo/dashboard.svg' %}" alt="logo" class="dashboard">
-  <img src="{% static '/logo/todolistbold.svg' %}" alt="logo" class="todolist">
+  <img src="{% static '/logo/todolist.svg' %}" alt="logo" class="todolist">
   <img src="{% static '/logo/habit.svg' %}" alt="logo" class="habit">
   <img src="{% static '/logo/finance.png' %}" alt="logo" class="finance">
-  <img src="{% static '/logo/gratitude.svg' %}" alt="logo" class="gratitude">
+  <img src="{% static '/logo/gratitudebold.svg' %}" alt="logo" class="gratitude">
   <img src="{% static '/logo/settings.svg' %}" alt="logo" class="settings">
   <img src="{% static '/logo/logout.svg' %}" alt="logo" class="logouticon">
 
   <span class="logotitle">StudApp</span>
 
   <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
-  <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
+  <a href="" class="todonav">To-Do List</a>
   <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
   <a href="" class="financenav">Finance Tracker</a>
   <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
@@ -34,18 +32,20 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 </div>
 
 <div class="middlecolumn"></div>
-<h1 class="createtasktitle">Edit task</h1>
-<form method="post">
-  {% csrf_token %}
-    <label class="titlecreate" for="title">Title:</label>
-    <input class="titletext" type="text" id="title" name="title" value="{{ task.title }}" class="form-control" required>
-    <label class="descriptioncreate" for="description">Category:</label>
-    <input class="descriptiontext" type="text" id="description" name="description" value="{{ task.description }}" class="form-control" required>
-    <label class="deadlinecreate" for="deadline">Deadline:</label>
-    <input class="deadlinetext" type="date" id="deadline" name="deadline" value="{{ task.deadline|date:'Y-m-d' }}" class="form-control" required>
-  <button type="submit" class="addtaskbutton">Update Task</button>
-</form>
-  <img src="{% static '/img/edittaskbackground.png' %}" alt="logo" class="todobackground">
+<h1 class="gratitudetitle">What are you grateful for today?</h1>
+<img src="{% static '/logo/gratprofile.svg' %}" alt="logo" class="graticon">
+<h2 class="gratitudesubtitle">"Gratitude is the memory of the heart."</h2>
+<img src="{% static '/img/gratitudebackground.png' %}" alt="logo" class="gratbackground">
+<a href="{% url 'gratitude_create' %}">
+  <div class="middlecolumnsub1"></div>
+  <h2 class="gratwrite">Write a new thought</h2>
+  <img src="{% static '/logo/gratwriteicon.svg' %}" alt="logo" class="gratwriteicon">
+</a>
+<a href="{% url 'gratitude_journal' %}">
+  <div class="middlecolumnsub2"></div>
+  <h2 class="gratjournal">Gratitude journal</h2>
+  <img src="{% static '/logo/gratjournalicon.svg' %}" alt="logo" class="gratjournalicon">
+</a>
 
 <div class="rightcolumn"></div>
     <a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
@@ -53,8 +53,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
     <span class="profileusername">@{{user}}</span>
 
 <div class="rightcolumn2"></div>
-  <h1 class="rightcolumnsquaretext">Updating task</h1>
-  <img src="{% static '/img/detailbackground.png' %}" alt="logo" class="detailbackground">
+  <img src="{% static '/img/gratitudebackground2.png' %}" alt="logo" class="detailbackground">
 
     <div class="calendarwrapper">
       <div class="wrapper">

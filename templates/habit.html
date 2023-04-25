@@ -25,9 +25,9 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 
       <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
       <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
-      <a href="" class="habitnav">Habit Tracker</a>
+      <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
       <a href="" class="financenav">Finance Tracker</a>
-      <a href="" class="gratitudenav">Gratitude Tracker</a>
+      <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
       <a href="{% url 'settings' %}" class="settingsnav">Settings</a>
       <a href="{% url 'logout' %}" class="logout">Log out</a>
 </div>
