@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.timezone import now
 from .models import Task
 from .models import Quote
+from .models import Gratitude
 import random
 
 
@@ -12,10 +13,16 @@ import random
 def index(request):
     quotes = Quote.objects.all()
     quote = random.choice(quotes)
-    context = {
-        'quote': quote
-    }
+    context = {'quote': quote}
+
+    if request.method == 'POST':
+        desc = request.POST['desc']
+        created = now()
+        gratitude = Gratitude.objects.create(user=request.user, desc=desc, created=created)
+        return redirect('gratitude_journal')
+
     return render(request, 'index.html', context)
+
 
 @login_required
 def habit(request):
@@ -125,3 +132,43 @@ def settings(request):
         return redirect('settings')
     return render(request, 'settings.html')
 
+@login_required
+def gratitude(request):
+    return render(request, 'gratitude.html')
+
+@login_required
+def gratitudecreate(request):
+   if request.method == 'POST':
+        desc = request.POST['desc']
+        created = now()
+        gratitude = Gratitude.objects.create(user=request.user, desc=desc, created=created)
+        if 'from_index' in request.POST:
+            return redirect('index')
+        else:
+            return redirect('gratitude_journal')
+   return render(request, 'gratitude_create.html')
+
+
+@login_required
+def gratitudejournal(request):
+    gratitudes = Gratitude.objects.filter(user=request.user)
+    context = {
+        'gratitudes': gratitudes
+    }
+    return render(request, 'gratitude_journal.html', context)
+
+@login_required
+def gratitudedelete(request, pk):
+    gratitude = Gratitude.objects.get(pk=pk, user=request.user)
+    gratitude.delete()
+    return redirect('gratitude_journal')
+
+@login_required
+def settingsedit(request):
+    if request.method == 'POST':
+        user = request.user
+        user.first_name = request.POST['first_name']
+        user.email = request.POST['email']
+        user.save()
+        return redirect('settings')
+    return render(request, 'settingsedit.html')

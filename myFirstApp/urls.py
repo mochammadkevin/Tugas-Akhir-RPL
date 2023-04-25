@@ -17,5 +17,9 @@ urlpatterns = [
     path('task_complete/<int:pk>/', views.taskcomplete, name='task_complete'),
     path('task_update/<int:pk>/', views.taskupdate, name='task_update'),
     path('settings/', views.settings, name='settings'),
-
+    path('gratitude/', views.gratitude, name='gratitude'),
+    path('gratitude_create/', views.gratitudecreate, name='gratitude_create'),
+    path('gratitude_journal/', views.gratitudejournal, name='gratitude_journal'),
+    path('gratitude_delete/<int:pk>/', views.gratitudedelete, name='gratitude_delete'),
+    path('settingsedit/', views.settingsedit, name='settingsedit'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

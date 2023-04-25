@@ -763,4 +763,6 @@ text-shadow: 0px 1.05051px 9.45455px rgba(0, 0, 0, 0.25);
     top: 455.71px;
     text-decoration: none;
     border: 0;
+    padding: 0;
+    background: none;
 }

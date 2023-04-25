@@ -1,0 +1,1029 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #575757;
+    font-weight: 700;
+}
+
+.studapplogo {
+    position: absolute;
+    width: 27.02px;
+    height: 27.02px;
+    left: 45.5px;
+    top: 54.03px;
+}
+
+.logotitle {
+    position: absolute;
+    width: 96.69px;
+    height: 26.77px;
+    left: 76.07px;
+    top: 55.45px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.1564px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.dashboardnav {
+    position: absolute;
+    width: 92.42px;
+    height: 22.75px;
+    left: 85px;
+    top: 142.9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+
+}
+
+.todonav {
+    position: absolute;
+    width: 111.62px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 226.08px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+}
+
+.habitnav {
+    position: absolute;
+    width: 111.62px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 309.26px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.financenav {
+    position: absolute;
+    width: 131.52px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 392.44px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+}
+
+.gratitudenav {
+    position: absolute;
+    width: 143.61px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 475.62px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.settingsnav {
+    position: absolute;
+    width: 154.98px;
+    height: 22.75px;
+    left: 84.59px;
+    top: 559px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #0079BD;
+}
+
+
+.leftcolumn {
+    position: absolute;
+    width: 334.85px;
+    height: 767.81px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 21.3281px rgba(0, 0, 0, 0.05);
+}
+
+.logout {
+    position: absolute;
+    width: 154.98px;
+    height: 22.75px;
+    left: 85.46px;
+    top: 642px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.dashboard {
+    position: absolute;
+    left: 63.50px;
+    right: 260.91;
+    top: 145.03px;
+    bottom: 609.98px;
+}
+
+.todolist {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 29.51%;
+    bottom: 68.62%;
+}
+
+.habit {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 40.35%;
+    bottom: 57.79%;
+}
+
+.finance {
+    position: absolute;
+    width: 13.51px;
+    height: 12.8px;
+    left: 60.79px;
+    top: 394.57px;
+}
+
+.gratitude {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 62.11%;
+    bottom: 36.13%;
+
+}
+
+.settings {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 72.96%;
+    bottom: 25.27%;
+}
+
+.logouticon {
+    position: absolute;
+    left: 61.14px;
+    right: 95.13%;
+    top: 83.69%;
+    bottom: 14.36%;
+}
+
+.usergreet {
+
+
+    position: absolute;
+    width: 524px;
+    height: 49px;
+    left: 381px;
+    top: 89px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36.56px;
+    line-height: 44px;
+
+    color: #000000;
+
+}
+
+.usertime {
+    position: absolute;
+    width: 179.54px;
+    height: 28.31px;
+    left: 381px;
+    top: 148.24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.1212px;
+    line-height: 26px;
+
+    color: #575757;
+
+}
+
+.newtaskbutton {
+    position: absolute;
+    width: 182.27px;
+    height: 38.28px;
+    left: 907px;
+    top: 124.54px;
+
+    background: rgba(0, 148, 255, 0.13);
+    border: 0.8px solid #9AD0E8;
+    border-radius: 5.31025px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.5817px;
+    line-height: 18px;
+
+    text-align: center;
+    color: #0079BD;
+}
+
+.rightcolumn {
+    position: absolute;
+    width: 373.3px;
+    height: 767.81px;
+    left: 1146px;
+    top: 0px;
+
+    background: #F5F5F5;
+}
+
+.profilecircle {
+    position: absolute;
+width: 88.85px;
+height: 88.85px;
+left: 470px;
+top: 196px;
+    border-radius: 50%;
+}
+
+.profilename {
+    position: absolute;
+    width: 208px;
+    height: 28px;
+    left: 585.11px;
+    top: 217.62px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.6282px;
+    line-height: 29px;
+    
+    color: #000000;
+}
+
+.profileusername {
+    position: absolute;
+    width: 208px;
+    height: 19px;
+    left: 585.11px;
+    top: 249.62px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.1178px;
+    line-height: 16px;
+    
+    color: #575757;
+    
+}
+
+.completedtask {
+    position: absolute;
+    left: 77.76%;
+    right: 2.15%;
+    top: 57.16%;
+    bottom: 39.06%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.2637px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+.middlecolumn {
+    position: absolute;
+    width: 924px;
+    height: 146px;
+    left: 432px;
+    top: 167px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+    border-radius: 19px;
+}
+
+.middlecolumn2{
+    
+position: absolute;
+width: 924px;
+height: 214px;
+left: 432px;
+top: 348px;
+
+background: #FFFFFF;
+box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+border-radius: 19px;
+}
+
+.tasktitle {
+    position: absolute;
+    width: 668px;
+    height: 35px;
+    left: 418px;
+    top: 222px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.803px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
+.taskdesc {
+    position: absolute;
+    width: 337px;
+    height: 28px;
+    left: 417px;
+    top: 275px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.4718px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+.taskcreated {
+    position: absolute;
+    width: 337px;
+    height: 28px;
+    left: 417px;
+    top: 321px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.4718px;
+    line-height: 25px;
+
+    color: #000000;
+
+}
+
+.taskstatus {
+    position: absolute;
+    width: 99px;
+    height: 27px;
+    left: 418px;
+    top: 471px;
+
+    background: linear-gradient(99.87deg, #00BD62 2.23%, #3EBEF5 96.86%);
+    box-shadow: 0px 0px 17.1082px rgba(0, 0, 0, 0.1);
+    border-radius: 13.5px;
+}
+
+.taskstatusdesc {
+    position: absolute;
+width: 72.82px;
+height: 17.18px;
+left: 431.09px;
+top: 476.73px;
+}
+
+.taskstatusdesc h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12.9966px;
+line-height: 16px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.edittask{
+    box-sizing: border-box;
+
+position: absolute;
+width: 205.48px;
+height: 33.55px;
+left: 418px;
+top: 373px;
+
+background: rgba(0, 148, 255, 0.13);
+border: 0.83871px solid #9AD0E8;
+border-radius: 5.56903px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15.0713px;
+line-height: 18px;
+text-align: center;
+
+color: #0079BD;
+}
+
+.deletetask{
+    box-sizing: border-box;
+
+position: absolute;
+width: 205.48px;
+height: 33.55px;
+left: 418px;
+top: 417.45px;
+
+background: rgba(255, 0, 0, 0.22);
+border: 0.83871px solid #E89A9A;
+border-radius: 5.56903px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15.0713px;
+line-height: 18px;
+text-align: center;
+
+color: #FF5C5C;
+}
+
+.todobackground{
+    position: absolute;
+    width: 469px;
+    height: 469px;
+    left: 658px;
+    top: 170px;
+    
+}
+
+.rightcolumn2{
+    position: absolute;
+width: 324px;
+height: 275px;
+left: 1179px;
+top: 441px;
+
+background: #FFFFFF;
+box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+border-radius: 19px;
+}
+
+.rightcolumnsquaretext{
+    position: absolute;
+left: 76.76%;
+right: 0.15%;
+top: 64.32%;
+bottom: 30.73%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30.4px;
+line-height: 37px;
+text-align: center;
+
+color: #000000;
+}
+
+.detailbackground{
+   position: absolute;
+width: 243.96px;
+height: 182.7px;
+left: 1226px;
+top: 533px;
+
+}
+
+.titlecreate{
+    position: absolute;
+width: 150.07px;
+height: 13.71px;
+left: 418.01px;
+top: 276px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14.4296px;
+line-height: 17px;
+
+color: #575757;
+
+}
+
+.titletext{
+    box-sizing: border-box;
+
+position: absolute;
+width: 226px;
+height: 31px;
+left: 418px;
+top: 298px;
+
+background: rgba(0, 0, 0, 0.05);
+border: 0.721482px solid #E7E7E7;
+border-radius: 4.78906px;
+font-size: 13px;
+padding: 10px;
+}
+
+.descriptioncreate{
+    position: absolute;
+width: 70.71px;
+height: 13.71px;
+left: 418.01px;
+top: 345.98px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14.4296px;
+line-height: 17px;
+
+color: #575757;
+}
+
+.descriptiontext{
+    box-sizing: border-box;
+
+position: absolute;
+width: 226px;
+height: 31px;
+left: 418px;
+top: 368px;
+
+background: rgba(0, 0, 0, 0.05);
+border: 0.721482px solid #E7E7E7;
+border-radius: 4.78906px;
+font-size: 13px;
+padding: 10px;
+}
+
+.deadlinecreate{
+    position: absolute;
+width: 70.71px;
+height: 13.71px;
+left: 418.01px;
+top: 416px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14.4296px;
+line-height: 17px;
+
+color: #575757;
+}
+
+.deadlinetext{
+    box-sizing: border-box;
+
+position: absolute;
+width: 226px;
+height: 31px;
+left: 418px;
+top: 438px;
+
+background: rgba(0, 0, 0, 0.05);
+border: 0.721482px solid #E7E7E7;
+border-radius: 4.78906px;
+
+font-size: 13px;
+padding: 10px;
+}
+
+.addtaskbutton{
+    box-sizing: border-box;
+
+position: absolute;
+width: 205.48px;
+height: 33.55px;
+left: 418px;
+top: 494px;
+
+background: rgba(0, 148, 255, 0.13);
+border: 0.83871px solid #9AD0E8;
+border-radius: 5.56903px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15.0713px;
+line-height: 18px;
+text-align: center;
+
+color: #0079BD;
+}
+
+.createtasktitle{
+    position: absolute;
+width: 668px;
+height: 35px;
+left: 418px;
+top: 222px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25.803px;
+line-height: 31px;
+
+color: #000000;
+
+}
+
+.gratitudetitle{
+    position: absolute;
+width: 169px;
+height: 49px;
+left: 432px;
+top: 83px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36.56px;
+line-height: 44px;
+
+color: #000000;
+
+
+}
+
+.gratitudesubtitle{
+    position: absolute;
+width: 373px;
+height: 23px;
+left: 453px;
+top: 240px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #575757;
+}
+
+.graticon{
+    position: absolute;
+width: 41px;
+height: 41px;
+left: 660px;
+top: 176px;
+
+}
+
+.gratbackground{
+position: absolute;
+width: 209px;
+height: 305.37px;
+left: 856px;
+top: 94px;
+}
+
+.gratwrite{
+    position: absolute;
+width: 459px;
+height: 177px;
+left: 512px;
+top: 213px;
+
+background: #F2F2F2;
+border: 3px solid #ECECEC;
+box-shadow: 0px 2.64333px 21.379px rgba(0, 0, 0, 0.15);
+border-radius: 17.661px;
+
+}
+
+.gratjournal{
+    position: absolute;
+width: 222px;
+height: 88px;
+left: 697px;
+top: 541px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+text-align: right;
+
+color: #000000;
+}
+
+.gratwriteicon{
+    position: absolute;
+width: 101px;
+height: 101px;
+left: 826px;
+top: 355px;
+
+}
+
+.gratjournalicon{
+    position: absolute;
+    height: 121px;
+    width: 121px;
+    left: 513px;
+    top: 520px;    
+}
+
+.smilelogo{
+  position: absolute;
+width: 33px;
+height: 33px;
+left: 921px;
+top: 202px;
+
+}
+
+.gratitudebackground3{
+   position: absolute;
+width: 770.53px;
+height: 782.71px;
+left: 359px;
+top: 0px;
+}
+
+.rightcolumntitle{
+    position: absolute;
+width: 260px;
+height: 28.79px;
+left: 1221px;
+top: 487px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25.2003px;
+line-height: 30px;
+
+color: #000000;
+}
+
+.gratitudetext{
+    position: absolute;
+   width: 459px;
+height: 177px;
+left: 512px;
+top: 315px;
+    
+    background: #F2F2F2;
+    border: 3px solid #ECECEC;
+    box-shadow: 0px 2.64333px 21.379px rgba(0, 0, 0, 0.15);
+    border-radius: 17.661px;
+    padding: 25px;
+    padding-bottom: 120px;
+    outline: none;
+}
+
+.gratsubmit{
+    position: absolute;
+    height: 26px;
+width: 26px;
+left: 946px;
+top: 517px;
+text-decoration: none;
+    border: 0;
+    background-color: none;
+}
+
+.gratsubmitdesc{
+    position: absolute;
+width: 130px;
+height: 24.15px;
+left: 805px;
+top: 518px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18.1148px;
+line-height: 22px;
+text-align: center;
+
+color: #0D96E4;
+
+}
+
+.personaltitle{
+    position: absolute;
+width: 327px;
+height: 37.52px;
+left: 473px;
+top: 381px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 31.6656px;
+line-height: 38px;
+
+color: #000000;
+}
+
+.nametitle{
+    position: absolute;
+width: 53.61px;
+height: 25.46px;
+left: 473px;
+top: 450.69px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17.58px;
+line-height: 21px;
+
+color: #575757;
+}
+
+.namedesc{
+    position: absolute;
+width: 135.36px;
+height: 25.46px;
+left: 473px;
+top: 480.17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17.58px;
+line-height: 21px;
+
+color: #000000;
+}
+
+.usernametitle{
+    position: absolute;
+width: 87.11px;
+height: 25.46px;
+left: 664.64px;
+top: 450.69px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17.58px;
+line-height: 21px;
+
+color: #575757;
+}
+
+.usernamedesc{
+    position: absolute;
+    width: 135.36px;
+    height: 25.46px;
+    left: 664.64px;
+    top: 480.17px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.58px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+
+.emailtitle{
+    position: absolute;
+    width: 87.11px;
+    height: 25.46px;
+    left: 856px;
+    top: 450.69px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.58px;
+    line-height: 21px;
+    
+    color: #575757;
+}
+
+.emaildesc{
+    position: absolute;
+width: 203px;
+height: 26px;
+left: 856px;
+top: 480px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17.58px;
+line-height: 21px;
+
+color: #000000;
+}
+
+.profileedit{
+    position: absolute;
+width: 110px;
+height: 40px;
+left: 990px;
+top: 220px;
+
+background: #FFFFFF;
+border: 1.63134px solid #D4D4D4;
+border-radius: 19.9839px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2743px;
+line-height: 23px;
+
+color: #575757;
+}
+
+.profilesubmit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 1125px;
+    top: 220px;
+    
+    background: #FFFFFF;
+    border: 1.63134px solid #D4D4D4;
+    border-radius: 19.9839px;    
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2743px;
+line-height: 23px;
+
+color: #575757;
+}
+
+.settingsedit{
+    position: absolute;
+width: 110px;
+height: 40px;
+left: 1178px;
+top: 443px;
+
+background: #FFFFFF;
+border: 1.63134px solid #D4D4D4;
+border-radius: 19.9839px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2743px;
+line-height: 23px;
+
+color: #575757;
+}
