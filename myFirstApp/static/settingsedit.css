@@ -360,10 +360,10 @@ a:hover {
 
 .middlecolumn2 {
     position: absolute;
-    width: 924px;
-    height: 304px;
+    width: 802px;
+    height: 496px;
     left: 432px;
-    top: 348px;
+    top: 148px;
 
     background: #FFFFFF;
     box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
@@ -863,7 +863,7 @@ a:hover {
     width: 327px;
     height: 37.52px;
     left: 473px;
-    top: 381px;
+    top: 179px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -872,6 +872,7 @@ a:hover {
     line-height: 38px;
 
     color: #000000;
+
 }
 
 .nametitle {
@@ -879,7 +880,7 @@ a:hover {
     width: 53.61px;
     height: 25.46px;
     left: 473px;
-    top: 450.69px;
+    top: 251px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -888,21 +889,26 @@ a:hover {
     line-height: 21px;
 
     color: #575757;
+
 }
 
 .namedesc {
-    position: absolute;
-    width: 135.36px;
-    height: 25.46px;
-    left: 473px;
-    top: 480.17px;
+    box-sizing: border-box;
 
+    position: absolute;
+    width: 222px;
+    height: 31px;
+    left: 473px;
+    top: 276.31px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 17.58px;
-    line-height: 21px;
-
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
     color: #000000;
 }
 
@@ -910,8 +916,8 @@ a:hover {
     position: absolute;
     width: 87.11px;
     height: 25.46px;
-    left: 796px;
-    top: 450.69px;
+    left: 800px;
+    top: 251px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -920,22 +926,27 @@ a:hover {
     line-height: 21px;
 
     color: #575757;
+
 }
 
 .usernamedesc {
+    box-sizing: border-box;
     position: absolute;
-    width: 242px;
-    height: 26px;
-    left: 796px;
-    top: 480px;
+    width: 222px;
+    height: 31px;
+    left: 800px;
+    top: 276.31px;
 
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 17.58px;
-    line-height: 21px;
-
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
     color: #000000;
+
 }
 
 .emailtitle {
@@ -943,7 +954,7 @@ a:hover {
     width: 87.11px;
     height: 25.46px;
     left: 473px;
-    top: 538px;
+    top: 342px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -952,21 +963,27 @@ a:hover {
     line-height: 21px;
 
     color: #575757;
+
 }
 
 .emaildesc {
+    box-sizing: border-box;
+
     position: absolute;
-    width: 244px;
-    height: 26px;
-    left: 473px;
-    top: 567px;
+    width: 221px;
+    height: 31px;
+    left: 474px;
+    top: 367.31px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 17.58px;
-    line-height: 21px;
-
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
     color: #000000;
 }
 
@@ -1078,4 +1095,179 @@ a:hover {
     display: flex;
     align-items: center;
     color: #000000;
+
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.changepasstitle {
+    position: absolute;
+    width: 154px;
+    height: 25px;
+    left: 800px;
+    top: 370px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.58px;
+    line-height: 21px;
+
+    color: #575757;
+
+}
+
+.checkboxpass {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 965px;
+    top: 372px;
+
+    background: #D9D9D9;
+    border-radius: 3px;
+}
+
+.currentpass {
+    position: absolute;
+    width: 154px;
+    height: 25px;
+    left: 475px;
+    top: 433px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.58px;
+    line-height: 21px;
+
+    color: #575757;
+
+}
+
+.currentpassdesc {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 221px;
+    height: 31px;
+    left: 476px;
+    top: 458.31px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.newpass {
+    position: absolute;
+    width: 154px;
+    height: 25px;
+    left: 800px;
+    top: 433px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.58px;
+    line-height: 21px;
+
+    color: #575757;
+
+}
+
+.newpassdesc {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 221px;
+    height: 31px;
+    left: 801px;
+    top: 458.31px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.confirmpass {
+    position: absolute;
+    width: 154px;
+    height: 25px;
+    left: 474px;
+    top: 527px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.58px;
+    line-height: 21px;
+
+    color: #575757;
+}
+
+.confirmpassdesc {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 221px;
+    height: 31px;
+    left: 475px;
+    top: 552.31px;
+
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+}
+
+.submit {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 182.27px;
+    height: 38.28px;
+    left: 432px;
+    top: 676px;
+
+    background: rgba(0, 148, 255, 0.13);
+    border: 1px solid #9AD0E8;
+    border-radius: 6.63781px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.5817px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #0079BD;
 }

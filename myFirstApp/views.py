@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import views as auth_views
 from django.utils.timezone import now
 from .models import Task
 from .models import Quote
 from .models import Gratitude
+from django.contrib import messages
 import random
 
 
@@ -168,7 +170,31 @@ def settingsedit(request):
     if request.method == 'POST':
         user = request.user
         user.first_name = request.POST['first_name']
+        user.username = request.POST['username']
         user.email = request.POST['email']
+
+        # Check if the user wants to change their password
+        if request.POST.get('change_password') == 'on':
+            current_password = request.POST['current_password']
+            new_password = request.POST['new_password']
+            confirm_password = request.POST['confirm_password']
+
+            # Check if the current password is correct
+            if user.check_password(current_password):
+                # Check if the new password and confirm password match
+                if new_password == confirm_password:
+                    # Set the new password
+                    user.set_password(new_password)
+                else:
+                    # Passwords don't match
+                    messages.error(request, 'New password and confirm password do not match.')
+                    return redirect('settingsedit')
+            else:
+                # Current password is incorrect
+                messages.error(request, 'Current password is incorrect.')
+                return redirect('settingsedit')
+
         user.save()
+        messages.success(request, 'Profile updated successfully.')
         return redirect('settings')
     return render(request, 'settingsedit.html')

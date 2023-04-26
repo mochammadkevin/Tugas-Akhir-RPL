@@ -39,9 +39,15 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 
     <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <button class="profileedit" type="button" onclick="document.getElementById('file-input').click()">Edit</button>
-        <input id="file-input" class="profileedit" type="file" name="profile" placeholder="Edit" style="display:none;">
-        <input class="profilesubmit" type="submit" value="Save changes">
+        <div class="editicon">
+          <button class="profileedit" type="button" onclick="document.getElementById('file-input').click()">Edit</button>
+          <input id="file-input" class="profileedit" type="file" name="profile" placeholder="Edit" style="display:none;">
+          <img src="{% static '/logo/editbutton.svg' %}" alt="logo" class="editbutton">
+        </div>
+        <div class="submiticon">
+          <input class="profilesubmit" type="submit" value="Save changes">
+          <img src="{% static '/logo/tick2.svg' %}" alt="logo" class="tickbutton">
+        </div>
     </form>
 
 
@@ -53,8 +59,11 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
     <h3 class="usernamedesc">@{{user}}</h3>
     <h3 class="emailtitle">Email</h3>
     <h3 class="emaildesc">{{ user.email }}</h3>
+    <h3 class="passwordtitle">Password</h3>
+    <h3 class="passworddesc">********</h3>
     <a href="{% url 'settingsedit' %}">
         <button class="settingsedit">Edit</button>
+        <img src="{% static '/logo/editbutton.svg' %}" alt="logo" class="editbutton2">
       </a>
     
 
