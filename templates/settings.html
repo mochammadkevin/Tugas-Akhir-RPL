@@ -3,10 +3,8 @@
 {% block content %}
 {% load static %}
 <link rel="stylesheet" href="{% static '/settings.css' %}">
-<link
-rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-/>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="{% static '/calendartodo.css' %}">
 <script src="{% static '/scriptcalendar.js' %}" defer></script>
 
@@ -33,41 +31,38 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 
 <h1 class="gratitudetitle">Settings</h1>
 <div class="middlecolumn"></div>
-    <img class="profilecircle" src="{{ user.profile.image.url }}">
-    <span class="profilename">{{ user.first_name }}</span>
-    <span class="profileusername">@{{user}}</span>
+<img class="profilecircle" src="{{ user.profile.image.url }}">
+<span class="profilename">{{ user.first_name }}</span>
+<span class="profileusername">@{{user}}</span>
 
-    <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <div class="editicon">
-          <button class="profileedit" type="button" onclick="document.getElementById('file-input').click()">Edit</button>
-          <input id="file-input" class="profileedit" type="file" name="profile" placeholder="Edit" style="display:none;">
-          <img src="{% static '/logo/editbutton.svg' %}" alt="logo" class="editbutton">
-        </div>
-        <div class="submiticon">
-          <input class="profilesubmit" type="submit" value="Save changes">
-          <img src="{% static '/logo/tick2.svg' %}" alt="logo" class="tickbutton">
-        </div>
-    </form>
+<form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="editicon">
+    <button class="profileedit" type="button" onclick="document.getElementById('file-input').click()">Edit</button>
+    <input id="file-input" class="profileedit" type="file" name="profile" placeholder="Edit" style="display:none;">
+    <img src="{% static '/logo/editbutton.svg' %}" alt="logo" class="editbutton">
+  </div>
+  <div class="submiticon">
+    <input class="profilesubmit" type="submit" value="Save changes">
+    <img src="{% static '/logo/tick2.svg' %}" alt="logo" class="tickbutton">
+  </div>
+</form>
 
 
 <div class="middlecolumn2"></div>
-    <h1 class="personaltitle">Personal Information</h1>
-    <h3 class="nametitle">Name</h3>
-    <h3 class="namedesc">{{ user.first_name }}</h3>
-    <h3 class="usernametitle">Username</h3>
-    <h3 class="usernamedesc">@{{user}}</h3>
-    <h3 class="emailtitle">Email</h3>
-    <h3 class="emaildesc">{{ user.email }}</h3>
-    <h3 class="passwordtitle">Password</h3>
-    <h3 class="passworddesc">********</h3>
-    <a href="{% url 'settingsedit' %}">
-        <button class="settingsedit">Edit</button>
-        <img src="{% static '/logo/editbutton.svg' %}" alt="logo" class="editbutton2">
-      </a>
-    
+<h1 class="personaltitle">Personal Information</h1>
+<h3 class="nametitle">Name</h3>
+<h3 class="namedesc">{{ user.first_name }}</h3>
+<h3 class="usernametitle">Username</h3>
+<h3 class="usernamedesc">@{{user}}</h3>
+<h3 class="emailtitle">Email</h3>
+<h3 class="emaildesc">{{ user.email }}</h3>
+<h3 class="passwordtitle">Password</h3>
+<h3 class="passworddesc">********</h3>
+<a href="{% url 'settingsedit' %}">
+  <button class="settingsedit">Edit</button>
+  <img src="{% static '/logo/editbutton.svg' %}" alt="logo" class="editbutton2">
+</a>
+
 
 {% endblock content %}
-
-
-

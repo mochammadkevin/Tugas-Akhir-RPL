@@ -422,108 +422,108 @@ a:hover {
 
 .taskstatusdesc {
     position: absolute;
-width: 72.82px;
-height: 17.18px;
-left: 431.09px;
-top: 476.73px;
+    width: 72.82px;
+    height: 17.18px;
+    left: 431.09px;
+    top: 476.73px;
 }
 
 .taskstatusdesc h3 {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 12.9966px;
-line-height: 16px;
-text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.9966px;
+    line-height: 16px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.edittask{
+.edittask {
     box-sizing: border-box;
 
-position: absolute;
-width: 205.48px;
-height: 33.55px;
-left: 418px;
-top: 373px;
+    position: absolute;
+    width: 205.48px;
+    height: 33.55px;
+    left: 418px;
+    top: 373px;
 
-background: rgba(0, 148, 255, 0.13);
-border: 0.83871px solid #9AD0E8;
-border-radius: 5.56903px;
+    background: rgba(0, 148, 255, 0.13);
+    border: 0.83871px solid #9AD0E8;
+    border-radius: 5.56903px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15.0713px;
-line-height: 18px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.0713px;
+    line-height: 18px;
+    text-align: center;
 
-color: #0079BD;
+    color: #0079BD;
 }
 
-.deletetask{
+.deletetask {
     box-sizing: border-box;
 
-position: absolute;
-width: 205.48px;
-height: 33.55px;
-left: 418px;
-top: 417.45px;
+    position: absolute;
+    width: 205.48px;
+    height: 33.55px;
+    left: 418px;
+    top: 417.45px;
 
-background: rgba(255, 0, 0, 0.22);
-border: 0.83871px solid #E89A9A;
-border-radius: 5.56903px;
+    background: rgba(255, 0, 0, 0.22);
+    border: 0.83871px solid #E89A9A;
+    border-radius: 5.56903px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15.0713px;
-line-height: 18px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.0713px;
+    line-height: 18px;
+    text-align: center;
 
-color: #FF5C5C;
+    color: #FF5C5C;
 }
 
-.todobackground{
+.todobackground {
     position: absolute;
     width: 469px;
     height: 469px;
     left: 658px;
     top: 170px;
-    
+
 }
 
-.rightcolumn2{
+.rightcolumn2 {
     position: absolute;
-width: 324px;
-height: 275px;
-left: 1179px;
-top: 441px;
+    width: 324px;
+    height: 275px;
+    left: 1179px;
+    top: 441px;
 
-background: #FFFFFF;
-box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
-border-radius: 19px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+    border-radius: 19px;
 }
 
-.rightcolumnsquaretext{
+.rightcolumnsquaretext {
     position: absolute;
-left: 76.76%;
-right: 0.15%;
-top: 64.32%;
-bottom: 30.73%;
+    left: 76.76%;
+    right: 0.15%;
+    top: 64.32%;
+    bottom: 30.73%;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 30.4px;
-line-height: 37px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.4px;
+    line-height: 37px;
+    text-align: center;
 
-color: #000000;
+    color: #000000;
 }
 
-.detailbackground{
+.detailbackground {
     position: absolute;
     height: 159px;
     width: 243px;
@@ -532,140 +532,140 @@ color: #000000;
     border-radius: 0px;
 }
 
-.titlecreate{
+.titlecreate {
     position: absolute;
-width: 150.07px;
-height: 13.71px;
-left: 418.01px;
-top: 276px;
+    width: 150.07px;
+    height: 13.71px;
+    left: 418.01px;
+    top: 276px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14.4296px;
-line-height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4296px;
+    line-height: 17px;
 
-color: #575757;
+    color: #575757;
 
 }
 
-.titletext{
+.titletext {
     box-sizing: border-box;
 
-position: absolute;
-width: 226px;
-height: 31px;
-left: 418px;
-top: 298px;
-
-background: rgba(0, 0, 0, 0.05);
-border: 0.721482px solid #E7E7E7;
-border-radius: 4.78906px;
-font-size: 13px;
-padding: 10px;
-}
-
-.descriptioncreate{
     position: absolute;
-width: 70.71px;
-height: 13.71px;
-left: 418.01px;
-top: 345.98px;
+    width: 226px;
+    height: 31px;
+    left: 418px;
+    top: 298px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14.4296px;
-line-height: 17px;
-
-color: #575757;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-.descriptiontext{
+.descriptioncreate {
+    position: absolute;
+    width: 70.71px;
+    height: 13.71px;
+    left: 418.01px;
+    top: 345.98px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4296px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.descriptiontext {
     box-sizing: border-box;
 
-position: absolute;
-width: 226px;
-height: 31px;
-left: 418px;
-top: 368px;
-
-background: rgba(0, 0, 0, 0.05);
-border: 0.721482px solid #E7E7E7;
-border-radius: 4.78906px;
-font-size: 13px;
-padding: 10px;
-}
-
-.deadlinecreate{
     position: absolute;
-width: 70.71px;
-height: 13.71px;
-left: 418.01px;
-top: 416px;
+    width: 226px;
+    height: 31px;
+    left: 418px;
+    top: 368px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14.4296px;
-line-height: 17px;
-
-color: #575757;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-.deadlinetext{
+.deadlinecreate {
+    position: absolute;
+    width: 70.71px;
+    height: 13.71px;
+    left: 418.01px;
+    top: 416px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4296px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.deadlinetext {
     box-sizing: border-box;
 
-position: absolute;
-width: 226px;
-height: 31px;
-left: 418px;
-top: 438px;
+    position: absolute;
+    width: 226px;
+    height: 31px;
+    left: 418px;
+    top: 438px;
 
-background: rgba(0, 0, 0, 0.05);
-border: 0.721482px solid #E7E7E7;
-border-radius: 4.78906px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
 
-font-size: 13px;
-padding: 10px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-.addtaskbutton{
+.addtaskbutton {
     box-sizing: border-box;
 
-position: absolute;
-width: 205.48px;
-height: 33.55px;
-left: 418px;
-top: 494px;
+    position: absolute;
+    width: 205.48px;
+    height: 33.55px;
+    left: 418px;
+    top: 494px;
 
-background: rgba(0, 148, 255, 0.13);
-border: 0.83871px solid #9AD0E8;
-border-radius: 5.56903px;
+    background: rgba(0, 148, 255, 0.13);
+    border: 0.83871px solid #9AD0E8;
+    border-radius: 5.56903px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15.0713px;
-line-height: 18px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.0713px;
+    line-height: 18px;
+    text-align: center;
 
-color: #0079BD;
+    color: #0079BD;
 }
 
-.createtasktitle{
+.createtasktitle {
     position: absolute;
-width: 668px;
-height: 35px;
-left: 418px;
-top: 222px;
+    width: 668px;
+    height: 35px;
+    left: 418px;
+    top: 222px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25.803px;
-line-height: 31px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.803px;
+    line-height: 31px;
 
-color: #000000;
+    color: #000000;
 
 }

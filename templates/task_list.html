@@ -2,10 +2,8 @@
 {% block title %}To-Do List{% endblock title %}
 {% block content %}
 {% load static %}
-<link
-rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-/>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="{% static '/todo.css' %}">
 <link rel="stylesheet" href="{% static '/calendartodo.css' %}">
 <script src="{% static '/scriptcalendar.js' %}" defer></script>
@@ -39,59 +37,24 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
 <div class="middlecolumn">
     <table>
         {% for task in tasks %}
-            {% if not task.complete %}
-                <tr>
-                    <td class="tasktitlewidth"> 
-                        <a class="tasktitle" href="{% url 'task' task.id %}">{{ task.title }}</a>
-                    </td>
-                    <td>
-                        <form action="{% url 'task_complete' task.id %}" method="POST">
-                            {% csrf_token %}
-                            <button type = "submit" class="incompletesubmit">
-                                <img src="{% static '/logo/tick.svg' %}" />
-                             </button>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="taskdesc">
-                        {{ task.description }} - <span style="color: #0D96E4;">{{ task.deadline|date:"l, M d" }}</span>
-                    </td>            
-                </tr>
-            {% endif %}
-        {% empty %}
-            <tr>
-                <td colspan="3">
-                    <h7>No items in list</h7>
-                </td>
-            </tr>
-        {% endfor %}
-    </table>
-    
-</div>
-
-<div class="rightcolumn"></div>
-<div class="rightcolumnprogress">
-    <table>
-        {% for task in tasks %}
-        {% if task.complete %}
+        {% if not task.complete %}
         <tr>
-            <td> 
-                <a class="tasktitle2" href="{% url 'task' task.id %}">{{ task.title }}</a>
+            <td class="tasktitlewidth">
+                <a class="tasktitle" href="{% url 'task' task.id %}">{{ task.title }}</a>
             </td>
             <td>
-                <form action="{% url 'task_complete' task.id %}?uncomplete=true" method="POST">
+                <form action="{% url 'task_complete' task.id %}" method="POST">
                     {% csrf_token %}
-                    <button type = "submit" class="completesubmit">
-                        <img src="{% static '/logo/remove.svg' %}" />
-                     </button>
+                    <button type="submit" class="incompletesubmit">
+                        <img src="{% static '/logo/tick.svg' %}" />
+                    </button>
                 </form>
             </td>
         </tr>
         <tr>
-            <td class="taskdesc2">
+            <td class="taskdesc">
                 {{ task.description }} - <span style="color: #0D96E4;">{{ task.deadline|date:"l, M d" }}</span>
-            </td>            
+            </td>
         </tr>
         {% endif %}
         {% empty %}
@@ -102,24 +65,59 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
         </tr>
         {% endfor %}
     </table>
-    
-</div>
-    <a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
-    <span class="profilename">{{ user.first_name }}</span>
-    <span class="profileusername">@{{user}}</span>
-    <h2 class="completedtask">Completed task</h2>
 
-    <div class="calendarwrapper">
-        <div class="wrapper">
-            <header>
-              <p class="current-date"></p>
-              <div class="icons">
+</div>
+
+<div class="rightcolumn"></div>
+<div class="rightcolumnprogress">
+    <table>
+        {% for task in tasks %}
+        {% if task.complete %}
+        <tr>
+            <td>
+                <a class="tasktitle2" href="{% url 'task' task.id %}">{{ task.title }}</a>
+            </td>
+            <td>
+                <form action="{% url 'task_complete' task.id %}?uncomplete=true" method="POST">
+                    {% csrf_token %}
+                    <button type="submit" class="completesubmit">
+                        <img src="{% static '/logo/remove.svg' %}" />
+                    </button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="taskdesc2">
+                {{ task.description }} - <span style="color: #0D96E4;">{{ task.deadline|date:"l, M d" }}</span>
+            </td>
+        </tr>
+        {% endif %}
+        {% empty %}
+        <tr>
+            <td colspan="3">
+                <h7>No items in list</h7>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+<a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
+<span class="profilename">{{ user.first_name }}</span>
+<span class="profileusername">@{{user}}</span>
+<h2 class="completedtask">Completed task</h2>
+
+<div class="calendarwrapper">
+    <div class="wrapper">
+        <header>
+            <p class="current-date"></p>
+            <div class="icons">
                 <span id="prev" class="material-symbols-rounded">chevron_left</span>
                 <span id="next" class="material-symbols-rounded">chevron_right</span>
-              </div>
-            </header>
-            <div class="calendar">
-              <ul class="weeks">
+            </div>
+        </header>
+        <div class="calendar">
+            <ul class="weeks">
                 <li>Sun</li>
                 <li>Mon</li>
                 <li>Tue</li>
@@ -127,18 +125,18 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wgh
                 <li>Thu</li>
                 <li>Fri</li>
                 <li>Sat</li>
-              </ul>
-              <ul class="days"></ul>
-            </div>
-          </div>
+            </ul>
+            <ul class="days"></ul>
+        </div>
     </div>
+</div>
 
-    <script>
-        let today = new Date();
-        const dateelement = document.getElementById("date");
-        const options = { month: 'long', year: 'numeric' };
-        dateelement.innerHTML = today.toLocaleDateString("en-US", options);
-      </script>
-      
+<script>
+    let today = new Date();
+    const dateelement = document.getElementById("date");
+    const options = { month: 'long', year: 'numeric' };
+    dateelement.innerHTML = today.toLocaleDateString("en-US", options);
+</script>
+
 
 {% endblock content %}

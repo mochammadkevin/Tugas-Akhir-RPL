@@ -348,15 +348,15 @@ a:hover {
 }
 
 .middlecolumn {
-   position: absolute;
-width: 525px;
-height: 93px;
-left: 477px;
-top: 170px;
+    position: absolute;
+    width: 525px;
+    height: 93px;
+    left: 477px;
+    top: 170px;
 
-background: #FFFFFF;
-box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
-border-radius: 19px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+    border-radius: 19px;
 }
 
 .tasktitle {
@@ -422,404 +422,404 @@ border-radius: 19px;
 
 .taskstatusdesc {
     position: absolute;
-width: 72.82px;
-height: 17.18px;
-left: 431.09px;
-top: 476.73px;
+    width: 72.82px;
+    height: 17.18px;
+    left: 431.09px;
+    top: 476.73px;
 }
 
 .taskstatusdesc h3 {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 12.9966px;
-line-height: 16px;
-text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.9966px;
+    line-height: 16px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.edittask{
+.edittask {
     box-sizing: border-box;
 
-position: absolute;
-width: 205.48px;
-height: 33.55px;
-left: 418px;
-top: 373px;
+    position: absolute;
+    width: 205.48px;
+    height: 33.55px;
+    left: 418px;
+    top: 373px;
 
-background: rgba(0, 148, 255, 0.13);
-border: 0.83871px solid #9AD0E8;
-border-radius: 5.56903px;
+    background: rgba(0, 148, 255, 0.13);
+    border: 0.83871px solid #9AD0E8;
+    border-radius: 5.56903px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15.0713px;
-line-height: 18px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.0713px;
+    line-height: 18px;
+    text-align: center;
 
-color: #0079BD;
+    color: #0079BD;
 }
 
-.deletetask{
+.deletetask {
     box-sizing: border-box;
 
-position: absolute;
-width: 205.48px;
-height: 33.55px;
-left: 418px;
-top: 417.45px;
+    position: absolute;
+    width: 205.48px;
+    height: 33.55px;
+    left: 418px;
+    top: 417.45px;
 
-background: rgba(255, 0, 0, 0.22);
-border: 0.83871px solid #E89A9A;
-border-radius: 5.56903px;
+    background: rgba(255, 0, 0, 0.22);
+    border: 0.83871px solid #E89A9A;
+    border-radius: 5.56903px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15.0713px;
-line-height: 18px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.0713px;
+    line-height: 18px;
+    text-align: center;
 
-color: #FF5C5C;
+    color: #FF5C5C;
 }
 
-.todobackground{
+.todobackground {
     position: absolute;
     width: 469px;
     height: 469px;
     left: 658px;
     top: 170px;
-    
+
 }
 
-.rightcolumn2{
+.rightcolumn2 {
     position: absolute;
-width: 324px;
-height: 275px;
-left: 1179px;
-top: 441px;
+    width: 324px;
+    height: 275px;
+    left: 1179px;
+    top: 441px;
 
-background: #FFFFFF;
-box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
-border-radius: 19px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+    border-radius: 19px;
 }
 
-.rightcolumnsquaretext{
+.rightcolumnsquaretext {
     position: absolute;
-left: 76.76%;
-right: 0.15%;
-top: 64.32%;
-bottom: 30.73%;
+    left: 76.76%;
+    right: 0.15%;
+    top: 64.32%;
+    bottom: 30.73%;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 30.4px;
-line-height: 37px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.4px;
+    line-height: 37px;
+    text-align: center;
 
-color: #000000;
+    color: #000000;
 }
 
-.detailbackground{
-   position: absolute;
-width: 243.96px;
-height: 182.7px;
-left: 1226px;
-top: 533px;
-
-}
-
-.titlecreate{
+.detailbackground {
     position: absolute;
-width: 150.07px;
-height: 13.71px;
-left: 418.01px;
-top: 276px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14.4296px;
-line-height: 17px;
-
-color: #575757;
+    width: 243.96px;
+    height: 182.7px;
+    left: 1226px;
+    top: 533px;
 
 }
 
-.titletext{
+.titlecreate {
+    position: absolute;
+    width: 150.07px;
+    height: 13.71px;
+    left: 418.01px;
+    top: 276px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4296px;
+    line-height: 17px;
+
+    color: #575757;
+
+}
+
+.titletext {
     box-sizing: border-box;
 
-position: absolute;
-width: 226px;
-height: 31px;
-left: 418px;
-top: 298px;
-
-background: rgba(0, 0, 0, 0.05);
-border: 0.721482px solid #E7E7E7;
-border-radius: 4.78906px;
-font-size: 13px;
-padding: 10px;
-}
-
-.descriptioncreate{
     position: absolute;
-width: 70.71px;
-height: 13.71px;
-left: 418.01px;
-top: 345.98px;
+    width: 226px;
+    height: 31px;
+    left: 418px;
+    top: 298px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14.4296px;
-line-height: 17px;
-
-color: #575757;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-.descriptiontext{
+.descriptioncreate {
+    position: absolute;
+    width: 70.71px;
+    height: 13.71px;
+    left: 418.01px;
+    top: 345.98px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4296px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.descriptiontext {
     box-sizing: border-box;
 
-position: absolute;
-width: 226px;
-height: 31px;
-left: 418px;
-top: 368px;
-
-background: rgba(0, 0, 0, 0.05);
-border: 0.721482px solid #E7E7E7;
-border-radius: 4.78906px;
-font-size: 13px;
-padding: 10px;
-}
-
-.deadlinecreate{
     position: absolute;
-width: 70.71px;
-height: 13.71px;
-left: 418.01px;
-top: 416px;
+    width: 226px;
+    height: 31px;
+    left: 418px;
+    top: 368px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14.4296px;
-line-height: 17px;
-
-color: #575757;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-.deadlinetext{
+.deadlinecreate {
+    position: absolute;
+    width: 70.71px;
+    height: 13.71px;
+    left: 418.01px;
+    top: 416px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4296px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.deadlinetext {
     box-sizing: border-box;
 
-position: absolute;
-width: 226px;
-height: 31px;
-left: 418px;
-top: 438px;
+    position: absolute;
+    width: 226px;
+    height: 31px;
+    left: 418px;
+    top: 438px;
 
-background: rgba(0, 0, 0, 0.05);
-border: 0.721482px solid #E7E7E7;
-border-radius: 4.78906px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.721482px solid #E7E7E7;
+    border-radius: 4.78906px;
 
-font-size: 13px;
-padding: 10px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-.addtaskbutton{
+.addtaskbutton {
     box-sizing: border-box;
 
-position: absolute;
-width: 205.48px;
-height: 33.55px;
-left: 418px;
-top: 494px;
-
-background: rgba(0, 148, 255, 0.13);
-border: 0.83871px solid #9AD0E8;
-border-radius: 5.56903px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15.0713px;
-line-height: 18px;
-text-align: center;
-
-color: #0079BD;
-}
-
-.createtasktitle{
     position: absolute;
-width: 668px;
-height: 35px;
-left: 418px;
-top: 222px;
+    width: 205.48px;
+    height: 33.55px;
+    left: 418px;
+    top: 494px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25.803px;
-line-height: 31px;
+    background: rgba(0, 148, 255, 0.13);
+    border: 0.83871px solid #9AD0E8;
+    border-radius: 5.56903px;
 
-color: #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.0713px;
+    line-height: 18px;
+    text-align: center;
 
+    color: #0079BD;
 }
 
-.gratitudetitle{
+.createtasktitle {
     position: absolute;
-width: 405px;
-height: 36px;
-left: 516px;
-top: 201px;
+    width: 668px;
+    height: 35px;
+    left: 418px;
+    top: 222px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 28.011px;
-line-height: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.803px;
+    line-height: 31px;
 
-color: #000000;
+    color: #000000;
 
 }
 
-.gratitudesubtitle{
+.gratitudetitle {
     position: absolute;
-width: 373px;
-height: 23px;
-left: 453px;
-top: 240px;
+    width: 405px;
+    height: 36px;
+    left: 516px;
+    top: 201px;
 
-font-family: 'Inter';
-font-style: italic;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28.011px;
+    line-height: 34px;
 
-color: #575757;
+    color: #000000;
+
 }
 
-.graticon{
+.gratitudesubtitle {
     position: absolute;
-width: 41px;
-height: 41px;
-left: 660px;
-top: 176px;
+    width: 373px;
+    height: 23px;
+    left: 453px;
+    top: 240px;
 
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #575757;
 }
 
-.gratbackground{
-position: absolute;
-width: 209px;
-height: 305.37px;
-left: 856px;
-top: 94px;
-}
-
-.middlecolumnsub1{
+.graticon {
     position: absolute;
-width: 525px;
-height: 273px;
-left: 477px;
-top: 288px;
+    width: 41px;
+    height: 41px;
+    left: 660px;
+    top: 176px;
 
-background: #FFFFFF;
-box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
-border-radius: 19px;
 }
 
-.gratwrite{
+.gratbackground {
     position: absolute;
-width: 459px;
-height: 177px;
-left: 512px;
-top: 213px;
-
-background: #F2F2F2;
-border: 3px solid #ECECEC;
-box-shadow: 0px 2.64333px 21.379px rgba(0, 0, 0, 0.15);
-border-radius: 17.661px;
-
+    width: 209px;
+    height: 305.37px;
+    left: 856px;
+    top: 94px;
 }
 
-.gratjournal{
+.middlecolumnsub1 {
     position: absolute;
-width: 222px;
-height: 88px;
-left: 697px;
-top: 541px;
+    width: 525px;
+    height: 273px;
+    left: 477px;
+    top: 288px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 44px;
-text-align: right;
-
-color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 23px rgba(0, 0, 0, 0.15);
+    border-radius: 19px;
 }
 
-.gratwriteicon{
+.gratwrite {
     position: absolute;
-width: 101px;
-height: 101px;
-left: 826px;
-top: 355px;
+    width: 459px;
+    height: 177px;
+    left: 512px;
+    top: 213px;
+
+    background: #F2F2F2;
+    border: 3px solid #ECECEC;
+    box-shadow: 0px 2.64333px 21.379px rgba(0, 0, 0, 0.15);
+    border-radius: 17.661px;
 
 }
 
-.gratjournalicon{
+.gratjournal {
+    position: absolute;
+    width: 222px;
+    height: 88px;
+    left: 697px;
+    top: 541px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: right;
+
+    color: #000000;
+}
+
+.gratwriteicon {
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    left: 826px;
+    top: 355px;
+
+}
+
+.gratjournalicon {
     position: absolute;
     height: 121px;
     width: 121px;
     left: 513px;
-    top: 520px;    
+    top: 520px;
 }
 
-.smilelogo{
-  position: absolute;
-width: 33px;
-height: 33px;
-left: 921px;
-top: 202px;
-
-}
-
-.gratitudebackground3{
-   position: absolute;
-width: 770.53px;
-height: 782.71px;
-left: 359px;
-top: 0px;
-}
-
-.rightcolumntitle{
+.smilelogo {
     position: absolute;
-width: 260px;
-height: 28.79px;
-left: 1221px;
-top: 487px;
+    width: 33px;
+    height: 33px;
+    left: 921px;
+    top: 202px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25.2003px;
-line-height: 30px;
-
-color: #000000;
 }
 
-.gratitudetext{
+.gratitudebackground3 {
     position: absolute;
-   width: 459px;
-height: 177px;
-left: 512px;
-top: 315px;
-    
+    width: 770.53px;
+    height: 782.71px;
+    left: 359px;
+    top: 0px;
+}
+
+.rightcolumntitle {
+    position: absolute;
+    width: 260px;
+    height: 28.79px;
+    left: 1221px;
+    top: 487px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.2003px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.gratitudetext {
+    position: absolute;
+    width: 459px;
+    height: 177px;
+    left: 512px;
+    top: 315px;
+
     background: #F2F2F2;
     border: 3px solid #ECECEC;
     box-shadow: 0px 2.64333px 21.379px rgba(0, 0, 0, 0.15);
@@ -829,31 +829,31 @@ top: 315px;
     outline: none;
 }
 
-.gratsubmit{
+.gratsubmit {
     position: absolute;
     height: 26px;
-width: 26px;
-left: 946px;
-top: 517px;
-text-decoration: none;
+    width: 26px;
+    left: 946px;
+    top: 517px;
+    text-decoration: none;
     border: 0;
     background-color: none;
 }
 
-.gratsubmitdesc{
+.gratsubmitdesc {
     position: absolute;
-width: 130px;
-height: 24.15px;
-left: 805px;
-top: 518px;
+    width: 130px;
+    height: 24.15px;
+    left: 805px;
+    top: 518px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 18.1148px;
-line-height: 22px;
-text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.1148px;
+    line-height: 22px;
+    text-align: center;
 
-color: #0D96E4;
+    color: #0D96E4;
 
 }
