@@ -11,7 +11,6 @@ from .models import Habit
 from django.contrib import messages
 import random
 
-
 @login_required
 def index(request):
     quotes = Quote.objects.all()
@@ -25,7 +24,6 @@ def index(request):
         return redirect('gratitude_journal')
 
     return render(request, 'index.html', context)
-
 
 @login_required
 def habit(request):
@@ -152,7 +150,6 @@ def gratitudecreate(request):
             return redirect('gratitude_journal')
    return render(request, 'gratitude_create.html')
 
-
 @login_required
 def gratitudejournal(request):
     gratitudes = Gratitude.objects.filter(user=request.user)
@@ -175,24 +172,18 @@ def settingsedit(request):
         user.username = request.POST['username']
         user.email = request.POST['email']
 
-        # Check if the user wants to change their password
         if request.POST.get('change_password') == 'on':
             current_password = request.POST['current_password']
             new_password = request.POST['new_password']
             confirm_password = request.POST['confirm_password']
 
-            # Check if the current password is correct
             if user.check_password(current_password):
-                # Check if the new password and confirm password match
                 if new_password == confirm_password:
-                    # Set the new password
                     user.set_password(new_password)
                 else:
-                    # Passwords don't match
                     messages.error(request, 'New password and confirm password do not match.')
                     return redirect('settingsedit')
             else:
-                # Current password is incorrect
                 messages.error(request, 'Current password is incorrect.')
                 return redirect('settingsedit')
 

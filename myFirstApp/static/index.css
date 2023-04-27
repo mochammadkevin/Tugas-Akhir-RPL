@@ -608,7 +608,7 @@ a:hover {
 
 .rightcolumn {
     position: fixed;
-    width: 373.3px;
+    width: 383.3px;
     height: 767.81px;
     left: 1146px;
     top: 0px;
@@ -620,7 +620,7 @@ a:hover {
     position: absolute;
     width: 130.95px;
     height: 36.26px;
-    left: 1276.1px;
+    left: 1286.1px;
     top: 55.45px;
 
     font-family: 'Inter';
@@ -637,7 +637,7 @@ a:hover {
     position: absolute;
     width: 100.24px;
     height: 100.24px;
-    left: 1291.03px;
+    left: 1301.03px;
     top: 106.64px;
     border-radius: 50%;
 }
@@ -646,7 +646,7 @@ a:hover {
     position: absolute;
     width: 324px;
     height: 28px;
-    left: 1179px;
+    left: 1189px;
     top: 231px;
 
     font-family: 'Inter';
@@ -664,7 +664,7 @@ a:hover {
     position: absolute;
     width: 324px;
     height: 17px;
-    left: 1179px;
+    left: 1189px;
     top: 265px;
 
     font-family: 'Inter';
@@ -681,8 +681,8 @@ a:hover {
     position: absolute;
     width: 323.48px;
     height: 186.98px;
-    left: 1179.41px;
-    top: 311.39px;
+    left: 1189.41px;
+    top: 291.39px;
 
     background: #FFFFFF;
     box-shadow: 0px 2.84375px 14.2188px rgba(0, 0, 0, 0.1);
@@ -694,8 +694,8 @@ a:hover {
     position: absolute;
     width: 224.66px;
     height: 18.48px;
-    left: 1266.15px;
-    top: 339.12px;
+    left: 1276.15px;
+    top: 319.12px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -711,8 +711,8 @@ a:hover {
     position: absolute;
     width: 122.28px;
     height: 12.29px;
-    left: 1267.57px;
-    top: 359.73px;
+    left: 1277.57px;
+    top: 339.73px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -728,8 +728,8 @@ a:hover {
     position: absolute;
     width: 54.03px;
     height: 54.03px;
-    left: 1201.45px;
-    top: 320.63px;
+    left: 1211.45px;
+    top: 300.63px;
 }
 
 .gratitudetext {
@@ -738,13 +738,13 @@ a:hover {
     position: absolute;
     width: 286.51px;
     height: 101.66px;
-    left: 1201.45px;
-    top: 383.91px;
+    left: 1211.45px;
+    top: 363.91px;
 
     background: rgba(0, 0, 0, 0.05);
     border: 1px solid #E7E7E7;
     border-radius: 6.63781px;
-    padding: 10px;
+    padding: 15px;
     padding-bottom: 70px;
 
     font-family: 'Inter';
@@ -752,15 +752,15 @@ a:hover {
     font-weight: 400;
     font-size: 14px;
     line-height: 11px;
-
+    outline: none;
 }
 
 .gratsubmit {
     position: absolute;
     width: 19.2px;
     height: 19.2px;
-    left: 1454.55px;
-    top: 455.71px;
+    left: 1464.55px;
+    top: 432.71px;
     text-decoration: none;
     border: 0;
     padding: 0;

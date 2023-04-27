@@ -76,7 +76,7 @@
 <form action="" method="post">
   {% csrf_token %}
   <input type="hidden" name="from_index" value="true">
-  <input type="text" name="desc" id="desc" placeholder="Write something here..." class="gratitudetext">
+  <textarea name="desc" id="desc" placeholder="Write something here..." class="gratitudetext"></textarea>
   <button type="submit" class="gratsubmit">
     <img src="{% static '/logo/gratsubmit.svg' %}" />
   </button>
