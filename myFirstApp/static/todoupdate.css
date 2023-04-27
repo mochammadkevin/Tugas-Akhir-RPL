@@ -139,7 +139,7 @@ a:hover {
 
 
 .leftcolumn {
-    position: absolute;
+    position: fixed;
     width: 334.85px;
     height: 767.81px;
     left: 0px;
@@ -279,7 +279,7 @@ a:hover {
 }
 
 .rightcolumn {
-    position: absolute;
+    position: fixed;
     width: 373.3px;
     height: 767.81px;
     left: 1146px;

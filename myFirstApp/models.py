@@ -37,3 +37,24 @@ class Gratitude(models.Model):
 
     def __str__(self):
         return self.desc
+
+
+class Habit(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    emoji = models.CharField(max_length=2)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    monday = models.BooleanField(default=False)
+    tuesday = models.BooleanField(default=False)
+    wednesday = models.BooleanField(default=False)
+    thursday = models.BooleanField(default=False)
+    friday = models.BooleanField(default=False)
+    saturday = models.BooleanField(default=False)
+    sunday = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
+
+    def get_progress(self):
+        days_completed = sum([self.monday, self.tuesday, self.wednesday, self.thursday, self.friday, self.saturday, self.sunday])
+        return f"{days_completed/7 * 100:.2f}%"

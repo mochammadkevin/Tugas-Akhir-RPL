@@ -2,71 +2,151 @@
 {% block title %}Habit Tracker{% endblock title %}
 {% block content %}
 {% load static %}
-<link
-rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-/>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="{% static '/habit.css' %}">
 <link rel="stylesheet" href="{% static '/calendarhabit.css' %}">
 <script src="{% static '/scriptcalendar.js' %}" defer></script>
 
 
 <div class="leftcolumn">
-    <img src="{% static '/logo/studapplogo.svg' %}" alt="logo" class="studapplogo">
-    <img src="{% static '/logo/dashboard.svg' %}" alt="logo" class="dashboard">
-    <img src="{% static '/logo/todolist.svg' %}" alt="logo" class="todolist">
-    <img src="{% static '/logo/habitbold.svg' %}" alt="logo" class="habit">
-    <img src="{% static '/logo/finance.png' %}" alt="logo" class="finance">
-    <img src="{% static '/logo/gratitude.svg' %}" alt="logo" class="gratitude">
-    <img src="{% static '/logo/settings.svg' %}" alt="logo" class="settings">
-    <img src="{% static '/logo/logout.svg' %}" alt="logo" class="logouticon">
+  <img src="{% static '/logo/studapplogo.svg' %}" alt="logo" class="studapplogo">
+  <img src="{% static '/logo/dashboard.svg' %}" alt="logo" class="dashboard">
+  <img src="{% static '/logo/todolist.svg' %}" alt="logo" class="todolist">
+  <img src="{% static '/logo/habitbold.svg' %}" alt="logo" class="habit">
+  <img src="{% static '/logo/finance.png' %}" alt="logo" class="finance">
+  <img src="{% static '/logo/gratitude.svg' %}" alt="logo" class="gratitude">
+  <img src="{% static '/logo/settings.svg' %}" alt="logo" class="settings">
+  <img src="{% static '/logo/logout.svg' %}" alt="logo" class="logouticon">
 
-    <span class="logotitle">StudApp</span>
+  <span class="logotitle">StudApp</span>
 
-      <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
-      <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
-      <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
-      <a href="" class="financenav">Finance Tracker</a>
-      <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
-      <a href="{% url 'settings' %}" class="settingsnav">Settings</a>
-      <a href="{% url 'logout' %}" class="logout">Log out</a>
+  <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
+  <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
+  <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
+  <a href="" class="financenav">Finance Tracker</a>
+  <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
+  <a href="{% url 'settings' %}" class="settingsnav">Settings</a>
+  <a href="{% url 'logout' %}" class="logout">Log out</a>
 </div>
 
 <div class="middlecolumn">
-    <h1 class="usergreet">Your weekly habit tracker!</h1>
-    <h2 class="usertime">Apr 3 - Apr 9</h2>
-    <button href="" class="newtaskbutton">Add new habit</button>
-</div>
-
-
-<div class="rightcolumn"></div>
-    <a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
-    <span class="profilename">{{ user.first_name }}</span>
-    <span class="profileusername">@{{user}}</span>
-    <h2 class="completedtask">This week progress</h2>
-
-<div class="calendarwrapper">
-    <div class="wrapper">
-        <header>
-          <p class="current-date"></p>
-          <div class="icons">
-            <span id="prev" class="material-symbols-rounded">chevron_left</span>
-            <span id="next" class="material-symbols-rounded">chevron_right</span>
+  {% if habits %}
+  <ul class="ulhabits">
+    {% for habit in habits %}
+    <li>
+      <div class="habitsquare">
+        <div class="habitsquare2">
+          <div class="titledescmerge">
+            <h2 class="habittitle">{{ habit.title }}</h2>
+            <p class="habitdesc">{{ habit.description }}</p>
           </div>
-        </header>
-        <div class="calendar">
-          <ul class="weeks">
-            <li>Sun</li>
-            <li>Mon</li>
-            <li>Tue</li>
-            <li>Wed</li>
-            <li>Thu</li>
-            <li>Fri</li>
-            <li>Sat</li>
-          </ul>
-          <ul class="days"></ul>
+          <div class="emojidaysmerge">
+            <p class="habitemoji">{{ habit.emoji }}</p>
+            <form method="post" action="{% url 'habit_update' habit.id %}">
+              {% csrf_token %}
+              <p>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="monday" {% if habit.monday %}checked{% endif %}
+                  onchange="this.form.submit()" id="monday_{{ habit.id }}">
+                <label for="monday_{{ habit.id }}" data-letter="M"></label>
+              </div>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="tuesday" {% if habit.tuesday %}checked{% endif %}
+                  onchange="this.form.submit()" id="tuesday_{{ habit.id }}">
+                <label for="tuesday_{{ habit.id }}" data-letter="T"></label>
+              </div>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="wednesday" {% if habit.wednesday %}checked{% endif %}
+                  onchange="this.form.submit()" id="wednesday_{{ habit.id }}">
+                <label for="wednesday_{{ habit.id }}" data-letter="W"></label>
+              </div>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="thursday" {% if habit.thursday %}checked{% endif %}
+                  onchange="this.form.submit()" id="thursday_{{ habit.id }}">
+                <label for="thursday_{{ habit.id }}" data-letter="T"></label>
+              </div>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="friday" {% if habit.friday %}checked{% endif %}
+                  onchange="this.form.submit()" id="friday_{{ habit.id }}">
+                <label for="friday_{{ habit.id }}" data-letter="F"></label>
+              </div>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="saturday" {% if habit.saturday %}checked{% endif %}
+                  onchange="this.form.submit()" id="saturday_{{ habit.id }}">
+                <label for="saturday_{{ habit.id }}" data-letter="S"></label>
+              </div>
+              <div class="round">
+                <input class="checkbox" type="checkbox" name="sunday" {% if habit.sunday %}checked{% endif %}
+                  onchange="this.form.submit()" id="sunday_{{ habit.id }}">
+                <label for="sunday_{{ habit.id }}" data-letter="S"></label>
+              </div>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>You haven't created any habits yet.</p>
+  {% endif %}
 </div>
+
+<h1 class="usergreet">Your weekly habit tracker!</h1>
+<h2 class="usertime">Apr 3 - Apr 9</h2>
+<a href="{% url 'habit_create' %}"><button class="newtaskbutton">Add new habit</button></a>
+
+<div class="rightcolumn"></div>
+<div class="rightcolumn2">
+  {% if habits %}
+  <ul class="ulprogress">
+    {% for habit in habits %}
+    <li>
+      <div class="squarehabitprogress">
+        <div class="circle">
+          <p class="emojisize">{{ habit.emoji }}</p>
+        </div>
+        <p class="progresstext">{{ habit.get_progress }}</p>
+      </div>
+    </li>
+    {% endfor %}
+</div>
+</ul>
+{% else %}
+<p>You haven't created any habits yet.</p>
+{% endif %}
+</div>
+<a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
+<span class="profilename">{{ user.first_name }}</span>
+<span class="profileusername">@{{user}}</span>
+<h2 class="completedtask">This week progress</h2>
+
+<div class="calendarwrapper">
+  <div class="wrapper">
+    <header>
+      <p class="current-date"></p>
+      <div class="icons">
+        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+        <span id="next" class="material-symbols-rounded">chevron_right</span>
+      </div>
+    </header>
+    <div class="calendar">
+      <ul class="weeks">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+      </ul>
+      <ul class="days"></ul>
+    </div>
+  </div>
+</div>
+
+
 
 {% endblock content %}

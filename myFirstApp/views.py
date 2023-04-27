@@ -7,6 +7,7 @@ from django.utils.timezone import now
 from .models import Task
 from .models import Quote
 from .models import Gratitude
+from .models import Habit
 from django.contrib import messages
 import random
 
@@ -28,7 +29,8 @@ def index(request):
 
 @login_required
 def habit(request):
-    return render(request, 'habit.html')
+    habits = Habit.objects.filter(user=request.user)
+    return render(request, 'habit.html', {'habits': habits})
 
 def register(request):
     if request.method == 'POST':
@@ -198,3 +200,36 @@ def settingsedit(request):
         messages.success(request, 'Profile updated successfully.')
         return redirect('settings')
     return render(request, 'settingsedit.html')
+
+@login_required
+def habitcreate(request):
+    if request.method == 'POST':
+        title = request.POST['title']
+        description = request.POST['description']
+        emoji = request.POST['emoji']
+        monday = request.POST.get('monday', False)
+        tuesday = request.POST.get('tuesday', False)
+        wednesday = request.POST.get('wednesday', False)
+        thursday = request.POST.get('thursday', False)
+        friday = request.POST.get('friday', False)
+        saturday = request.POST.get('saturday', False)
+        sunday = request.POST.get('sunday', False)
+        habit = Habit.objects.create(user=request.user, title=title, description=description, emoji=emoji)
+        habit.save()
+        return redirect('habit')
+    return render(request, 'habit_create.html')
+
+@login_required
+def habitupdate(request, id):
+    habit = Habit.objects.get(id=id)
+    if request.method == 'POST':
+        habit.monday = 'monday' in request.POST
+        habit.tuesday = 'tuesday' in request.POST
+        habit.wednesday = 'wednesday' in request.POST
+        habit.thursday = 'thursday' in request.POST
+        habit.friday = 'friday' in request.POST
+        habit.saturday = 'saturday' in request.POST
+        habit.sunday = 'sunday' in request.POST
+        habit.save()
+        return redirect('habit')
+    return render(request, 'habit_update.html', {'habit': habit})
