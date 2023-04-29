@@ -37,10 +37,12 @@
     <li>
       <div class="habitsquare">
         <div class="habitsquare2">
-          <div class="titledescmerge">
-            <h2 class="habittitle">{{ habit.title }}</h2>
-            <p class="habitdesc">{{ habit.description }}</p>
-          </div>
+          <a href="{% url 'habit_detail' habit.pk %}">
+            <div class="titledescmerge">
+              <h2 class="habittitle">{{ habit.title }}</h2>
+              <p class="habitdesc">{{ habit.description }}</p>
+            </div>
+          </a>
           <div class="emojidaysmerge">
             <p class="habitemoji">{{ habit.emoji }}</p>
             <form method="post" action="{% url 'habit_update' habit.id %}">
@@ -90,7 +92,7 @@
     {% endfor %}
   </ul>
   {% else %}
-  <p>You haven't created any habits yet.</p>
+  <p class="emptyhabit">You haven't created any habits yet.</p>
   {% endif %}
 </div>
 
@@ -104,12 +106,14 @@
   <ul class="ulprogress">
     {% for habit in habits %}
     <li>
+      <a href="{% url 'habit_detail' habit.pk %}">
       <div class="squarehabitprogress">
         <div class="circle">
           <p class="emojisize">{{ habit.emoji }}</p>
         </div>
         <p class="progresstext">{{ habit.get_progress }}</p>
       </div>
+      </a>
     </li>
     {% endfor %}
 </div>

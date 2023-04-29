@@ -1,0 +1,877 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #575757;
+    font-weight: 700;
+}
+
+.studapplogo {
+    position: absolute;
+    width: 27.02px;
+    height: 27.02px;
+    left: 45.5px;
+    top: 54.03px;
+}
+
+.logotitle {
+    position: absolute;
+    width: 96.69px;
+    height: 26.77px;
+    left: 76.07px;
+    top: 55.45px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.1564px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.dashboardnav {
+    position: absolute;
+    width: 92.42px;
+    height: 22.75px;
+    left: 85px;
+    top: 142.9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+
+}
+
+.todonav {
+    position: absolute;
+    width: 111.62px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 226.08px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+}
+
+.habitnav {
+    position: absolute;
+    width: 111.62px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 309.26px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #0079BD;
+}
+
+.financenav {
+    position: absolute;
+    width: 131.52px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 392.44px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+
+}
+
+.gratitudenav {
+    position: absolute;
+    width: 143.61px;
+    height: 22.75px;
+    left: 84.6px;
+    top: 475.62px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.settingsnav {
+    position: absolute;
+    width: 154.98px;
+    height: 22.75px;
+    left: 84.59px;
+    top: 559px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+
+.leftcolumn {
+    position: fixed;
+    width: 334.85px;
+    height: 767.81px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2.84375px 21.3281px rgba(0, 0, 0, 0.05);
+}
+
+.logout {
+    position: absolute;
+    width: 154.98px;
+    height: 22.75px;
+    left: 85.46px;
+    top: 642px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2188px;
+    line-height: 17px;
+
+    color: #575757;
+}
+
+.dashboard {
+    position: absolute;
+    left: 63.50px;
+    right: 260.91;
+    top: 145.03px;
+    bottom: 609.98px;
+}
+
+.todolist {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 29.51%;
+    bottom: 68.62%;
+}
+
+.habit {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 40.35%;
+    bottom: 57.79%;
+}
+
+.finance {
+    position: absolute;
+    width: 13.51px;
+    height: 12.8px;
+    left: 60.79px;
+    top: 394.57px;
+}
+
+.gratitude {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 62.11%;
+    bottom: 36.13%;
+
+}
+
+.settings {
+    position: absolute;
+    left: 61.14px;
+    right: 95.19%;
+    top: 72.96%;
+    bottom: 25.27%;
+}
+
+.logouticon {
+    position: absolute;
+    left: 61.14px;
+    right: 95.13%;
+    top: 83.69%;
+    bottom: 14.36%;
+}
+
+.usergreet {
+    position: absolute;
+    width: 524px;
+    height: 49px;
+    left: 381px;
+    top: 89px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36.56px;
+    line-height: 44px;
+
+    color: #000000;
+
+}
+
+.usertime {
+    position: absolute;
+    width: 179.54px;
+    height: 28.31px;
+    left: 381px;
+    top: 148.24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.1212px;
+    line-height: 26px;
+
+    color: #575757;
+
+}
+
+.newtaskbutton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 182.27px;
+    height: 38.28px;
+    left: 907px;
+    top: 124.54px;
+
+    background: rgba(0, 148, 255, 0.13);
+    border: 1px solid #9AD0E8;
+    border-radius: 6.63781px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.5817px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #0079BD;
+}
+
+.rightcolumn {
+    position: fixed;
+    width: 373.3px;
+    height: 767.81px;
+    left: 1146px;
+    top: 0px;
+
+    background: #F5F5F5;
+}
+
+.profilecircle {
+    position: absolute;
+    width: 88.85px;
+    height: 88.85px;
+    left: 1179.89px;
+    top: 38.38px;
+    border-radius: 50%;
+}
+
+.profilename {
+
+    position: absolute;
+    width: 208px;
+    height: 28px;
+    left: 1295px;
+    top: 60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.6282px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.profileusername {
+
+    position: absolute;
+    width: 208px;
+    height: 19px;
+    left: 1295px;
+    top: 92px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.1178px;
+    line-height: 16px;
+
+    color: #575757;
+}
+
+.completedtask {
+    position: absolute;
+    height: 29px;
+    width: 324px;
+    left: 1181px;
+    top: 440px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.2637px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+.middlecolumn {
+    position: absolute;
+    width: 705px;
+    height: 554px;
+    left: 355px;
+    top: 214px;
+}
+
+.habitsquare {
+    width: 706px;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.15);
+    border-radius: 27px;
+    margin-bottom: 45px;
+}
+
+.habitsquare2 {
+position: absolute;
+width: 433.13px;
+height: 270px;
+left: 522px;
+top: 160px;
+filter: drop-shadow(0px 0px 34.5536px rgba(0, 0, 0, 0.15));
+}
+
+.ulhabits li:nth-child(3n+1) .habitsquare2 {
+    background: linear-gradient(89.98deg, #FF5656 0.4%, #FF9900 99.98%);
+}
+
+.ulhabits li:nth-child(3n+2) .habitsquare2 {
+    background: linear-gradient(90deg, #34AAFF 0%, #F2A2FF 98.61%);
+}
+
+.ulhabits li:nth-child(3n+3) .habitsquare2 {
+    background: linear-gradient(90deg, #47D744 0%, #1EBBFF 100%);
+}
+
+.titledescmerge {
+    display: flex;
+}
+
+.emojidaysmerge {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+.habittitle {
+    width: 261px;
+    padding-top: 11.5px;
+    padding-left: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.9852px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+}
+
+.habitdesc {
+    text-align: right;
+    width: 425px;
+    height: 17px;
+    padding-top: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.7801px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+}
+
+.habitemoji {
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 97.31px;
+    font-size: 100px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.round {
+    position: relative;
+    margin-right: 60px;
+}
+
+.round label {
+    display: flex;
+    background-color: #E8E8E8;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 48px;
+}
+
+.round label:after {
+    border: 4px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 12px;
+    left: 12px;
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    transform: rotate(-45deg);
+    width: 24px;
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked+label {
+    background-color: #0D96E4;
+    border-color: #0D96E4;
+}
+
+.round input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+.round input[type="checkbox"]+label:before {
+    content: attr(data-letter);
+    display: inline-block;
+    color: #6A6A6A;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0 auto;
+    margin: 0 auto;
+    padding-top: 7px;
+    text-align: right;
+}
+
+.round input[type="checkbox"]:checked+label:before {
+    content: "";
+}
+
+form {
+    padding-top: 65px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.rightcolumn2 {
+    position: absolute;
+    width: 328px;
+    height: 379px;
+    left: 1181px;
+    top: 490px;
+    padding: 0[];
+
+}
+
+.squarehabitprogress {
+    display: flex;
+    width: 325px;
+    height: 92px;
+    margin-bottom: 22px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+
+.ulprogress li:nth-child(3n+1) .squarehabitprogress {
+    background: linear-gradient(89.98deg, #FF5656 0.4%, #FF9900 99.98%);
+}
+
+.ulprogress li:nth-child(3n+2) .squarehabitprogress {
+    background: linear-gradient(90deg, #34AAFF 0%, #F2A2FF 98.61%);
+}
+
+.ulprogress li:nth-child(3n+3) .squarehabitprogress {
+    background: linear-gradient(90deg, #47D744 0%, #1EBBFF 100%);
+}
+
+.ulprogress {
+    padding: 0;
+}
+
+.circle {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    display: flex;
+    width: 70.84px;
+    height: 69px;
+    background: #FFFFFF;
+    border-radius: 34.5px;
+    justify-content: center;
+}
+
+.circle p {
+    margin: auto;
+}
+
+.emojisize {
+    font-size: 35px;
+}
+
+.progresstext {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46.8919px;
+    line-height: 63px;
+
+    color: #FFFFFF;
+}
+
+.squaretitle {
+    position: absolute;
+width: 525px;
+height: 506px;
+left: 477px;
+top: 119px;
+
+background: linear-gradient(89.94deg, #47C6E0 0.06%, #CEE6CA 99.95%);
+box-shadow: inset 0px 0px 21.7662px rgba(0, 0, 0, 0.5);
+border-radius: 24px;
+}
+
+.squaretitle2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 539px;
+    height: 103px;
+    left: 470px;
+    top: 124px;
+    border: 9px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 43px rgba(0, 0, 0, 0.15);
+    border-radius: 51.5px;
+}
+
+.squaretitletext {
+    position: absolute;
+width: 385.71px;
+height: 50.09px;
+left: 546.11px;
+top: 182px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 35.2538px;
+line-height: 43px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+.squarehabit {
+    position: absolute;
+    width: 603px;
+    height: 399px;
+    left: 438px;
+    top: 281px;
+
+    background: linear-gradient(89.94deg, #FF5953 0.06%, #FF9209 99.95%);
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 47px;
+}
+
+.squarehabit2 {
+    position: absolute;
+    width: 539px;
+    height: 336px;
+    left: 468px;
+    top: 307px;
+}
+
+.squarehabittext {
+    position: absolute;
+    width: 323.88px;
+    height: 40.13px;
+    left: 576px;
+    top: 327px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28.2403px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.squarehabittext2 {
+    position: absolute;
+    width: 277.77px;
+    height: 24.36px;
+    left: 598.61px;
+    top: 368.64px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17.836px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.habitnametitle {
+    position: absolute;
+width: 97.22px;
+height: 20.54px;
+left: 557.36px;
+top: 262.86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16.5871px;
+line-height: 20px;
+
+color: #434343;
+
+
+}
+
+.habitdesctitle {
+
+position: absolute;
+width: 113.65px;
+height: 20.66px;
+left: 557.36px;
+top: 333.57px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16.5871px;
+line-height: 20px;
+
+color: #434343;
+}
+
+.habiticontitle {
+   position: absolute;
+width: 97.22px;
+height: 20.54px;
+left: 812.09px;
+top: 262.86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16.5871px;
+line-height: 20px;
+
+color: #434343;
+}
+
+.habitnametext {
+   box-sizing: border-box;
+
+position: absolute;
+width: 206.52px;
+height: 32.95px;
+left: 557.36px;
+top: 290.18px;
+
+font-family: 'Inter';
+background: rgba(0, 0, 0, 0.05);
+border: 0.754127px solid #E7E7E7;
+border-radius: 5.00575px;
+padding: 10px;
+outline: none;
+}
+
+.habitdesctext {
+  box-sizing: border-box;
+
+position: absolute;
+width: 206.52px;
+height: 32.14px;
+left: 557.36px;
+top: 364.91px;
+
+font-family: 'Inter';
+background: rgba(0, 0, 0, 0.05);
+border: 0.754127px solid #E7E7E7;
+border-radius: 5.00575px;
+padding: 10px;
+outline: none;
+}
+
+.habiticontext {
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 106.88px;
+    height: 106.88px;
+    left: 812.09px;
+    top: 290.18px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border: 0.754127px solid #E7E7E7;
+    border-radius: 5.00575px;
+    outline: none;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio {
+    position: absolute;
+    width: 397.59px;
+    height: 142.09px;
+    left: 541px;
+    top: 425px;
+filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+}
+
+.stripe{
+    position: absolute;
+width: 172.77px;
+height: 19.71px;
+left: 645.69px;
+top: 564.29px;
+}
+
+.screw{
+    position: absolute;
+width: 491.15px;
+height: 474.15px;
+left: 497px;
+top: 133px;
+
+filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, 0.25));
+}
+
+.submitsquare1 {
+    position: absolute;
+    width: 324px;
+    height: 83px;
+    left: 1179px;
+    top: 445px;
+
+    background: linear-gradient(89.94deg, #0691BD 0.06%, #3ABEEB 99.95%);
+    box-shadow: inset 0px 0px 10.5721px rgba(0, 0, 0, 0.5);
+    border-radius: 60.5px;
+}
+
+.submitsquare2 {
+    position: absolute;
+    width: 278px;
+    height: 49px;
+    left: 1202px;
+    top: 460px;
+
+    background: rgba(255, 255, 255, 0.01);
+    border: 4.25788px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 20.3432px rgba(0, 0, 0, 0.15);
+    border-radius: 24.3646px;
+
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 35.0678px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+    color: #FFFFFF;
+}
+
+.submitsquare3 {
+    position: absolute;
+    width: 324px;
+    height: 83px;
+    left: 1179px;
+    top: 545px;
+
+    background: linear-gradient(89.94deg, #FF3D3D 0.06%, #FF8282 99.95%);
+    box-shadow: inset 0px 0px 10.5721px rgba(0, 0, 0, 0.5);
+    border-radius: 60.5px;
+}
+
+.submitsquare4 {
+    position: absolute;
+    width: 278px;
+    height: 49px;
+    left: 1202px;
+    top: 560px;
+
+    background: rgba(255, 255, 255, 0.01);
+    border: 4.25788px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 20.3432px rgba(0, 0, 0, 0.15);
+    border-radius: 24.3646px;
+
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 35.0678px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+    color: #FFFFFF;
+}
+

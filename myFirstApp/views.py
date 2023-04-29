@@ -224,3 +224,32 @@ def habitupdate(request, id):
         habit.save()
         return redirect('habit')
     return render(request, 'habit_update.html', {'habit': habit})
+
+@login_required
+def habitdelete(request, id):
+    habit = Habit.objects.get(id=id)
+    habit.delete()
+    return redirect('habit')
+
+@login_required
+def habitdetail(request, id):
+    habit = Habit.objects.get(id=id)
+    context = {
+        'habit': habit
+    }
+    return render(request, 'habit_detail.html', context)
+
+
+@login_required
+def habit_edit(request, id):
+    habit = Habit.objects.get(id=id)
+    if request.method == 'POST':
+        title = request.POST['title']
+        description = request.POST['description']
+        emoji = request.POST['emoji']
+        habit.title = title # Update the habit object with the new values
+        habit.description = description
+        habit.emoji = emoji
+        habit.save()
+        return redirect('habit')
+    return render(request, 'habit_edit.html', {'habit': habit})
