@@ -4,12 +4,29 @@ from django.utils import timezone
 
 # Create your models here.
 
+TYPE = (
+    ('Positive', 'Positive'),
+    ('Negative', 'Negative'),
+)
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    income = models.FloatField(default=0)
+    expenses = models.FloatField(default=0)
+    balance = models.FloatField(blank=True, null=True)
 
     def __str__(self):
         return f'{self.user.username} Profile'
+
+class Expense(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    amount = models.FloatField()
+    expense_type = models.CharField(max_length=100, choices=TYPE)
+
+    def __str__(self):
+        return self.name
 
 class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)

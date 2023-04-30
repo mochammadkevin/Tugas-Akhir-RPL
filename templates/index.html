@@ -25,7 +25,7 @@
   <div class="todotest"></div>
   <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
   <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
-  <a href="" class="financenav">Finance Tracker</a>
+  <a href="{% url 'financetracker' %}" class="financenav">Finance Tracker</a>
   <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
   <a href="{% url 'settings' %}" class="settingsnav">Settings</a>
   <a href="{% url 'logout' %}" class="logout">Log out</a>
@@ -40,11 +40,10 @@
   <div class="financesquare1"></div>
   <div class="financesquare2"></div>
   <span class="financebalance">Current Balance</span>
-  <span class="financebalancecash">$26.517,00</span>
+  <span class="financebalancecash">${{profile.balance}}</span>
   <span class="financeexpense">Total Expense</span>
-  <span class="financeexpensecash">-$127,00</span>
-  <div class="financesquare3"></div>
-  <div class="financesquare3text">Daily</div>
+  <span class="financeexpensecash">-${{profile.expenses}}</span>
+
 
   <div class="middlecolumncontent2"></div>
   <span class="habittitle">Habit Tracker</span>

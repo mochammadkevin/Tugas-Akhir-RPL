@@ -8,14 +8,17 @@ from .models import Task
 from .models import Quote
 from .models import Gratitude
 from .models import Habit
+from .models import Profile
+from .models import Expense
 from django.contrib import messages
 import random
 
 @login_required
 def index(request):
+    profile = Profile.objects.get(user=request.user)
     quotes = Quote.objects.all()
     quote = random.choice(quotes)
-    context = {'quote': quote}
+    context = { 'profile': profile, 'quote': quote }
 
     if request.method == 'POST':
         desc = request.POST['desc']
@@ -253,3 +256,40 @@ def habit_edit(request, id):
         habit.save()
         return redirect('habit')
     return render(request, 'habit_edit.html', {'habit': habit})
+
+@login_required
+def financetracker(request):
+    profile = Profile.objects.filter(user=request.user).first()
+    expenses = Expense.objects.filter(user=request.user)
+    
+    if request.method == 'POST':
+        text = request.POST.get('text')
+        amount = request.POST.get('amount')
+        expense_type = request.POST.get('expense_type')
+
+        expense = Expense(name=text, amount=amount, expense_type=expense_type, user=request.user)
+        expense.save()
+        
+        if expense_type == 'Positive':
+            if profile.balance is None:
+                profile.balance = float(amount)
+            else:
+                profile.balance += float(amount)
+            profile.income += float(amount)
+        else:
+            if profile.balance is None:
+                profile.balance = 0 - float(amount)
+            else:
+                profile.expenses += float(amount)
+                profile.balance -= float(amount)
+            
+        profile.save()
+        return redirect('financetracker')
+
+    context = {'profile': profile, 'expenses': expenses}
+    return render(request, 'financetracker.html', context)
+
+
+
+
+

@@ -27,4 +27,5 @@ urlpatterns = [
     path('gratitude_journal/', views.gratitudejournal, name='gratitude_journal'),
     path('gratitude_delete/<int:pk>/', views.gratitudedelete, name='gratitude_delete'),
     path('settingsedit/', views.settingsedit, name='settingsedit'),
+    path('financetracker/', views.financetracker, name='financetracker'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
