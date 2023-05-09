@@ -48,17 +48,38 @@
   <div class="middlecolumncontent2"></div>
   <span class="habittitle">Habit Tracker</span>
   <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect2">
-  <img src="{% static '/logo/bicycle.svg' %}" alt="logo" class="bicyclelogo">
-  <span class="habittext">Bicycle</span>
-  <span class="habittext2">Everyday at 06.30</span>
+  <div class="bicyclelogo">{{ habit_emoji }}</div>
+<span class="habittext">{{ habit_title }}</span>
+<span class="habittext2">{{ habit_description }}</span>
 
   <div class="middlecolumncontent3"></div>
   <span class="todotitle">To-Do List</span>
   <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect3">
-  <div class="middlecolumncontent31"></div>
-  <span class="todotitle2">Studying</span>
+  <div class="middlecolumncontent31" style="overflow: auto;">
+    <table>
+    {% for task in tasks %}
+        {% if not task.complete %}
+        <tr>
+            <td class="tasktitlewidth">
+                <a class="tasktitle">{{ task.title }}</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="taskdesc">
+                {{ task.description }} - <span style="color: #0D96E4;">{{ task.deadline|date:"l, M d" }}</span>
+            </td>
+        </tr>
+        {% endif %}
+        {% empty %}
+        <tr>
+            <td colspan="3">
+                <h7>No items in list</h7>
+            </td>
+        </tr>
+        {% endfor %}
+      </table>
+  </div>
 
-  <div class="middlecolumncontent4"></div>
   <div class="middlecolumncontent41"></div>
   <span class="quotestext">"{{ quote.desc }}"</span>
 </div>

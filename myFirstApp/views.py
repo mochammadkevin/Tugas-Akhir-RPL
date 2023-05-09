@@ -18,7 +18,14 @@ def index(request):
     profile = Profile.objects.get(user=request.user)
     quotes = Quote.objects.all()
     quote = random.choice(quotes)
-    context = { 'profile': profile, 'quote': quote }
+    habit = Habit.objects.filter(user=request.user).order_by('?').first() # This retrieves a random habit from the database
+    tasks = Task.objects.filter(user=request.user)
+    context = { 'profile': profile, 'quote': quote, 'tasks': tasks }
+
+    if habit is not None:
+        context['habit_title'] = habit.title
+        context['habit_emoji'] = habit.emoji
+        context['habit_description'] = habit.description
 
     if request.method == 'POST':
         desc = request.POST['desc']
@@ -27,6 +34,9 @@ def index(request):
         return redirect('gratitude_journal')
 
     return render(request, 'index.html', context)
+
+
+
 
 @login_required
 def habit(request):
@@ -73,7 +83,6 @@ def logoutview(request):
 
 @login_required
 def tasklist(request):
-    print(request.user)
     tasks = Task.objects.filter(user=request.user)
     context = {
         'tasks': tasks

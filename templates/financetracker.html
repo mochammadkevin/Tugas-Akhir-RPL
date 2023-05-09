@@ -1,4 +1,158 @@
+{% extends 'base.html' %}
+{% block title %}Finance Tracker{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="{% static '/finance.css' %}">
+<link rel="stylesheet" href="{% static '/calendarhabit.css' %}">
+<script src="{% static '/scriptcalendar.js' %}" defer></script>
+
+
+<div class="leftcolumn">
+  <img src="{% static '/logo/studapplogo.svg' %}" alt="logo" class="studapplogo">
+  <img src="{% static '/logo/dashboard.svg' %}" alt="logo" class="dashboard">
+  <img src="{% static '/logo/todolist.svg' %}" alt="logo" class="todolist">
+  <img src="{% static '/logo/habit.svg' %}" alt="logo" class="habit">
+  <img src="{% static '/logo/financebold.svg' %}" alt="logo" class="finance">
+  <img src="{% static '/logo/gratitude.svg' %}" alt="logo" class="gratitude">
+  <img src="{% static '/logo/settings.svg' %}" alt="logo" class="settings">
+  <img src="{% static '/logo/logout.svg' %}" alt="logo" class="logouticon">
+
+  <span class="logotitle">StudApp</span>
+
+  <a href="{% url 'index' %}" class="dashboardnav">Dashboard</a>
+  <a href="{% url 'tasks' %}" class="todonav">To-Do List</a>
+  <a href="{% url 'habit' %}" class="habitnav">Habit Tracker</a>
+  <a href="{% url 'financetracker' %}" class="financenav">Finance Tracker</a>
+  <a href="{% url 'gratitude' %}" class="gratitudenav">Gratitude Tracker</a>
+  <a href="{% url 'settings' %}" class="settingsnav">Settings</a>
+  <a href="{% url 'logout' %}" class="logout">Log out</a>
+</div>
+
+<div class="middlecolumn"></div>
+  <div class="square1finance"></div>
+    <h1 class="totalbalance">Total balance</h1>
+    <h2 class="userbalance">${{profile.balance}}</h2>
+    <div class="circleincome"></div>
+    <img src="{% static '/logo/income.svg' %}" alt="logo" class="incomeicon">
+    <h3 class="incometitle">Income</h3>
+    <h3 class="income">${{profile.income}}</h3>
+    <div class="circleexpense"></div>
+    <img src="{% static '/logo/expense.svg' %}" alt="logo" class="expenseicon">
+    <h3 class="expensetitle">Expenses</h3>
+    <h3 class="expense">-${{profile.expenses}}</p></h3>
+
+
+  <div class="square2finance"></div>
+    <h2 class="newtransaction">New transaction</h2>
+    <form id="form" method="POST">
+      {% csrf_token %}
+      <input class="financedesc" type="text" id="text" name="text" placeholder="Write down description / title" required>
+
+      <input class="financemoney" type="text" id="amount" name="amount" placeholder="Enter the amount" required>
+
+    
+    
+      <label class="income-label">
+        <input type="radio" name="expense_type" value="Positive" style="display: none;" class="transaction-type">
+        <img src="{% static '/img/incometransaction.png' %}" alt="Income" class="incomeicon2" onclick="selectTransactionType('income')">
+      </label>
+      
+      <label class="expense-label">
+        <input type="radio" name="expense_type" value="Negative" style="display: none;" class="transaction-type">
+        <img src="{% static '/img/expensestransaction.png' %}" alt="Expenses" class="expenseicon2" onclick="selectTransactionType('expense')">
+      </label>
+      
+    
+      <h3 class="incomeadd">Income</h3>
+      <h3 class="expenseadd">Expenses</h3>
+    
+      <button class="financesubmit" type="submit">Add</button>
+    
+    </form>
+    
+    
+    
+    <script>
+      function selectTransactionType(type) {
+        if (type === 'income') {
+          document.querySelector('.incomeicon2').src = '{% static "/img/incometransaction-selected.png" %}';
+          document.querySelector('.expenseicon2').src = '{% static "/img/expensestransaction.png" %}';
+        } else {
+          document.querySelector('.incomeicon2').src = '{% static "/img/incometransaction.png" %}';
+          document.querySelector('.expenseicon2').src = '{% static "/img/expensestransaction-selected.png" %}';
+        }
+      }
+    </script>
+
+
+
+
+<div class="rightcolumn"></div>
+<div class="rightcolumn2">
+  <ul id="list" class="list">
+
+    {% for expense in expenses%}
+    {% if expense.expense_type == 'Positive'%}
+    <li class="plus">
+      {{expense.name}} <span>+${{expense.amount}}</span>
+    </li>
+    {% else %}
+    <li class="minus">
+      {{expense.name}} <span>-${{expense.amount}}</span>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+
+  </ul>
+</div>
+<a href="{% url 'settings' %}"><img class="profilecircle" src="{{ user.profile.image.url }}"></a>
+<span class="profilename">{{ user.first_name }}</span>
+<span class="profileusername">@{{user}}</span>
+<h2 class="completedtask">History</h2>
+
+<div class="calendarwrapper">
+  <div class="wrapper">
+    <header>
+      <p class="current-date"></p>
+      <div class="icons">
+        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+        <span id="next" class="material-symbols-rounded">chevron_right</span>
+      </div>
+    </header>
+    <div class="calendar">
+      <ul class="weeks">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+      </ul>
+      <ul class="days"></ul>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock content %}
+
 <h2>Expense Tracker</h2>
+
+<h1 class="totalbalance">Total balance</h1>
+<h2 class="userbalance">${{profile.balance}}</h2>
+<div class="circleincome"></div>
+<img src="{% static '/logo/income.svg' %}" alt="logo" class="incomeicon">
+<h3 class="incometitle">Income</h3>
+<h3 class="income">${{profile.income}}</h3>
+<div class="circleexpense"></div>
+<img src="{% static '/logo/expense.svg' %}" alt="logo" class="expenseicon">
+<h3 class="expensetitle">Expenses</h3>
+<h3 class="expense">-${{profile.expenses}}</p></h3>
 
 <div class="container">
   <h4>Your Balance</h4>
@@ -16,22 +170,20 @@
   </div>
 
   <h3>History</h3>
-  <ul id="list" class="list">
 
     {% for expense in expenses%}
     {% if expense.expense_type == 'Positive'%}
-    <li class="plus">
-      {{expense.name}} <span>+${{expense.amount}}</span>
-    </li>
+    <div class="plus">
+      <h1 class="expensesname">{{expense.name}}</h1>
+      <h1 class="expenseamount">+${{expense.amount}}</h1>
+    </div>
     {% else %}
-    <li class="minus">
-      {{expense.name}} <span>-${{expense.amount}}</span>
-    </li>
+    <div class="minus">
+      <h1 class="expensesname">{{expense.name}}</h1>
+      <h1 class="expenseamount">+${{expense.amount}}</h1>
+    </div>
     {% endif %}
     {% endfor %}
-
-
-  </ul>
 
   <h3>Add new transaction</h3>
   <form id="form" method="POST">

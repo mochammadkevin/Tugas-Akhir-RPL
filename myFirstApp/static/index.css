@@ -479,8 +479,9 @@ a:hover {
     position: absolute;
     width: 81.23px;
     height: 81.23px;
-    left: 526.9px;
-    top: 444.01px;
+    left: 512.9px;
+    top: 424.01px;
+    font-size: 80px;
 
     filter: drop-shadow(0px 2.80095px 8.40285px rgba(0, 0, 0, 0.15));
 }
@@ -764,4 +765,29 @@ a:hover {
     border: 0;
     padding: 0;
     background: none;
+}
+
+.tasktitle{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16.5829px;
+line-height: 20px;
+color: #000000;
+}
+
+.taskdesc{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12.0982px;
+line-height: 15px;
+padding-left: 20px;
+color: #7C7C7C;
+padding-bottom: 10px;
+}
+
+.tasktitlewidth{
+    padding-top: 10px;
+    padding-left: 20px;
 }

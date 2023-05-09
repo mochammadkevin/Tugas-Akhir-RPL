@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'emoji_picker',
+    'livereload',
 ]
 
 MIDDLEWARE = [
