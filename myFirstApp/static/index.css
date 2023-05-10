@@ -534,9 +534,9 @@ a:hover {
 .middlecolumncontent31 {
     position: absolute;
     width: 252px;
-    height: 267.52px;
+    height: 247.52px;
     left: 779px;
-    top: 433.13px;
+    top: 453.13px;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 20.9101px rgba(0, 0, 0, 0.1);
@@ -545,18 +545,18 @@ a:hover {
 
 .todotitle2 {
     position: absolute;
-    width: 116.11px;
-    height: 22.91px;
-    left: 809.99px;
-    top: 457.26px;
+    width: 156px;
+    height: 26px;
+    left: 779px;
+    top: 424px;
 
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17.0538px;
-    line-height: 21px;
+font-style: normal;
+font-weight: 600;
+font-size: 14.5829px;
+line-height: 20px;
 
-    color: #000000;
+color: #000000;
 
 }
 
@@ -771,8 +771,8 @@ a:hover {
     font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
-font-size: 16.5829px;
-line-height: 20px;
+font-size: 13.5829px;
+line-height: 0px;
 color: #000000;
 }
 
@@ -784,10 +784,31 @@ font-size: 12.0982px;
 line-height: 15px;
 padding-left: 20px;
 color: #7C7C7C;
-padding-bottom: 10px;
+padding-bottom: 5px;
 }
 
 .tasktitlewidth{
     padding-top: 10px;
     padding-left: 20px;
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Target the thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Set the color of the thumb */
+  border-radius: 10px; /* Round the corners of the thumb */
+}
+
+/* Target the track of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the track */
+}
+
+/* Target the corner of the scrollbar */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1; /* Set the color of the corner */
 }

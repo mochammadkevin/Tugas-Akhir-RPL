@@ -97,7 +97,7 @@
 </div>
 
 <h1 class="usergreet">Your weekly habit tracker!</h1>
-<h2 class="usertime">Apr 3 - Apr 9</h2>
+<h2 class="usertime" id="date"></h2>
 <a href="{% url 'habit_create' %}"><button class="newtaskbutton">Add new habit</button></a>
 
 <div class="rightcolumn"></div>
@@ -150,6 +150,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  let today = new Date();
+  const startOfWeek = new Date(today.setDate(today.getDate() - today.getDay()));
+  const endOfWeek = new Date(today.setDate(today.getDate() - today.getDay() + 6));
+  const dateElement = document.getElementById("date");
+  const options = { month: 'long', day: 'numeric' };
+  dateElement.innerHTML = startOfWeek.toLocaleDateString("en-US", options) + " - " + endOfWeek.toLocaleDateString("en-US", options);
+</script>
+
 
 
 

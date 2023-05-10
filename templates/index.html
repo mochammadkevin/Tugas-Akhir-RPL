@@ -35,8 +35,10 @@
   <h1 class="usergreet">Hello there, {{ user.first_name }}!</h1>
   <h2 id="date" class="usertime"></h2>
   <div class="middlecolumncontent1"></div>
+  <a href="{% url 'financetracker' %}">
   <span class="financetitle">Finance Tracker</span>
-  <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect1">
+    <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect1">
+  </a>
   <div class="financesquare1"></div>
   <div class="financesquare2"></div>
   <span class="financebalance">Current Balance</span>
@@ -46,15 +48,20 @@
 
 
   <div class="middlecolumncontent2"></div>
-  <span class="habittitle">Habit Tracker</span>
-  <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect2">
+  <a href="{% url 'habit' %}">
+    <span class="habittitle">Habit Tracker</span>
+    <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect2">
+  </a>
   <div class="bicyclelogo">{{ habit_emoji }}</div>
 <span class="habittext">{{ habit_title }}</span>
 <span class="habittext2">{{ habit_description }}</span>
 
   <div class="middlecolumncontent3"></div>
-  <span class="todotitle">To-Do List</span>
-  <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect3">
+  <a href="{% url 'tasks' %}">
+    <span class="todotitle">To-Do List</span>
+    <img src="{% static '/logo/redirect.svg' %}" alt="logo" class="redirect3">
+  </a>
+  <span class="todotitle2">Unfinished tasks</span>
   <div class="middlecolumncontent31" style="overflow: auto;">
     <table>
     {% for task in tasks %}
