@@ -43,7 +43,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Once the server is running, you can access your Django project by visiting http://localhost:8000 in your web browser.
+Once the server is running, you can access the project by visiting http://localhost:8000 in your web browser.
 
 
 
