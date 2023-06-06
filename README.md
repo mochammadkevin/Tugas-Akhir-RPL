@@ -21,29 +21,24 @@ By using StudApp, students can easily keep track of their daily habits, finances
 ```bash
 git clone https://github.com/mochammadkevin/Tugas-Akhir-RPL.git
 ```
-2. Install Django
-Open your terminal or command prompt and run the following command to install Django:
+2. Open your terminal or command prompt and run the following command to install Django:
 ```bash
 python -m pip install Django
 ```
-3. Install django-emoji-picker
-Next, install the django-emoji-picker package by running the following command:
+3. Next, install the django-emoji-picker package by running the following command:
 ```bash
 pip install django-emoji-picker
 ```
-4. Install livereload
-Install the livereload package by running the following command:
+4. Install the livereload package by running the following command:
 ```bash
 pip install livereload
 ```
-5. Apply migrations
-Apply the initial database migrations by running the following command:
+5. Apply the initial database migrations by running the following command:
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
-6. Run the server
-Finally, start the development server by running the following command:
+6. Finally, start the development server by running the following command:
 ```bash
 python manage.py runserver
 ```
