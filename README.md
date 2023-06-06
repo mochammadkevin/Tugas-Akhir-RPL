@@ -14,7 +14,7 @@ By using StudApp, students can easily keep track of their daily habits, finances
 
 ## Installation
 ### Prerequisites
-- [Docker](https://docs.docker.com/get-docker/)
+- [Python](https://docs.docker.com/get-docker/](https://www.python.org/downloads/)
 
 ### Steps
 1. Clone this repository
