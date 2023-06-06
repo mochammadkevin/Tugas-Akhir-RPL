@@ -8,9 +8,9 @@ By using StudApp, students can easily keep track of their daily habits, finances
 
 |Name|NIM|
 |--|--|
-|[Mochammad Kevin Ariobimo]|G6401211061 |
-|[Muhammad Giyas Wisnu Rizqi]|G6401211091|
-|[Syifa Ainul Qolbiyah]|G6401211007|
+|Mochammad Kevin Ariobimo|G6401211061 |
+|Muhammad Giyas Wisnu Rizqi|G6401211091|
+|Syifa Ainul Qolbiyah|G6401211007|
 
 ## Installation
 ### Prerequisites
