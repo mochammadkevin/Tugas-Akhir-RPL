@@ -45,5 +45,17 @@ python manage.py runserver
 
 Once the server is running, you can access the project by visiting http://localhost:8000 in your web browser.
 
+## Screenshots
+![Register Design - Chrome (1)](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/96210957-bf1d-42a3-9cf7-1bc11f053068)
 
+![Login Design - Chrome](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/796a4645-e2f8-455e-9fde-1f9e337c436a)
 
+![Dashboard - Chrome (1)](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/8682643c-1262-4975-8629-56e77139dbbc)
+
+![To-Do List - Chrome](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/0370e2d7-110b-4977-a570-76bf413239e7)
+
+![Gratitude - Chrome](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/32cd1912-74a2-4b24-81c1-56fbfd4a8877)
+
+![Gratitude Write New Thought - Chrome](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/0d522929-5ddd-474c-849f-13ad2254a814)
+
+![Habit Tracker - Chrome](https://github.com/mochammadkevin/Tugas-Akhir-RPL/assets/88078382/b21a8198-b7c9-42dc-b213-383c29919da2)
